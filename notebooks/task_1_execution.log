@@ -1,0 +1,285 @@
+2026-02-01 20:07:25,029 - __main__ - INFO - ================================================================================
+2026-02-01 20:07:25,031 - __main__ - INFO - TASK 1: Data Exploration and Enrichment
+2026-02-01 20:07:25,031 - __main__ - INFO - Execution started: 2026-02-01 20:07:25.031855
+2026-02-01 20:07:25,033 - __main__ - INFO - ================================================================================
+2026-02-01 20:18:52,419 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-01 20:19:18,889 - DataLoader - INFO - Loading unified data from data\raw\ethiopia_fi_unified_data.xlsx
+2026-02-01 20:19:18,892 - DataLoader - ERROR - File not found: [Errno 2] No such file or directory: 'data\\raw\\ethiopia_fi_unified_data.xlsx'
+2026-02-01 20:27:48,345 - __main__ - INFO - ================================================================================
+2026-02-01 20:27:48,355 - __main__ - INFO - TASK 1: Data Exploration and Enrichment
+2026-02-01 20:27:48,355 - __main__ - INFO - Execution started: 2026-02-01 20:27:48.355817
+2026-02-01 20:27:48,355 - __main__ - INFO - ================================================================================
+2026-02-01 20:28:01,288 - __main__ - INFO - ================================================================================
+2026-02-01 20:28:01,293 - __main__ - INFO - TASK 1: Data Exploration and Enrichment
+2026-02-01 20:28:01,293 - __main__ - INFO - Execution started: 2026-02-01 20:28:01.293134
+2026-02-01 20:28:01,295 - __main__ - INFO - ================================================================================
+2026-02-01 20:28:05,210 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-01 20:28:17,125 - DataLoader - INFO - Loading unified data from ..\data\raw\ethiopia_fi_unified_data.xlsx
+2026-02-01 20:28:17,479 - DataLoader - INFO - Loaded unified data: 43 rows, 34 columns
+2026-02-01 20:28:17,491 - DataLoader - INFO - Loaded impact links: 14 rows, 35 columns
+2026-02-01 20:28:17,491 - DataLoader - INFO - Loading reference codes from ..\data\raw\reference_codes.xlsx
+2026-02-01 20:28:17,506 - DataLoader - INFO - Loaded reference codes: 71 rows
+2026-02-01 20:28:55,489 - __main__ - INFO - 
+Analyzing structure of Unified Data
+2026-02-01 20:28:55,501 - __main__ - INFO - Shape: (43, 34)
+2026-02-01 20:28:55,503 - __main__ - INFO - Columns (34): ['record_id', 'record_type', 'category', 'pillar', 'indicator']...
+2026-02-01 20:28:55,503 - __main__ - INFO - Missing values: 614 total
+2026-02-01 20:28:55,503 - __main__ - INFO - Duplicate rows: 0
+2026-02-01 20:28:55,503 - __main__ - INFO - 
+Analyzing record types distribution
+2026-02-01 20:28:55,510 - __main__ - INFO - 
+Record Types Distribution:
+record_type  count  percentage
+observation     30       69.77
+      event     10       23.26
+     target      3        6.98
+2026-02-01 20:28:55,519 - __main__ - INFO - 
+Analyzing temporal coverage
+2026-02-01 20:28:55,521 - __main__ - INFO - Earliest date: 2014-12-31 00:00:00
+2026-02-01 20:28:55,521 - __main__ - INFO - Latest date: 2030-12-31 00:00:00
+2026-02-01 20:28:55,524 - __main__ - INFO - Total span: 16.0 years
+2026-02-01 20:28:55,524 - __main__ - INFO - 
+Analyzing indicator coverage
+2026-02-01 20:28:55,543 - __main__ - INFO - 
+Indicator Coverage (19 unique indicators):
+    indicator_code  count                    indicator_name   earliest     latest primary_confidence
+        ACC_4G_COV      2            4G Population Coverage 2023-06-30 2025-06-30               high
+         ACC_FAYDA      3       Fayda Digital ID Enrollment 2024-08-15 2025-05-15               high
+    ACC_MM_ACCOUNT      2         Mobile Money Account Rate 2021-12-31 2024-11-29               high
+    ACC_MOBILE_PEN      1   Mobile Subscription Penetration 2025-12-31 2025-12-31               high
+     ACC_OWNERSHIP      6            Account Ownership Rate 2014-12-31 2024-11-29               high
+   AFF_DATA_INCOME      1          Data Affordability Index 2024-12-31 2024-12-31             medium
+       GEN_GAP_ACC      2      Account Ownership Gender Gap 2021-12-31 2024-11-29               high
+    GEN_GAP_MOBILE      1           Mobile Phone Gender Gap 2024-12-31 2024-12-31               high
+      GEN_MM_SHARE      1 Female Mobile Money Account Share 2024-12-31 2024-12-31               high
+   USG_ACTIVE_RATE      1        Mobile Money Activity Rate 2024-12-31 2024-12-31               high
+     USG_ATM_COUNT      1             ATM Transaction Count 2025-07-07 2025-07-07               high
+     USG_ATM_VALUE      1             ATM Transaction Value 2025-07-07 2025-07-07               high
+     USG_CROSSOVER      1           P2P/ATM Crossover Ratio 2025-07-07 2025-07-07               high
+  USG_MPESA_ACTIVE      1        M-Pesa 90-Day Active Users 2024-12-31 2024-12-31               high
+   USG_MPESA_USERS      1           M-Pesa Registered Users 2024-12-31 2024-12-31               high
+     USG_P2P_COUNT      2             P2P Transaction Count 2024-07-07 2025-07-07               high
+     USG_P2P_VALUE      1             P2P Transaction Value 2025-07-07 2025-07-07               high
+USG_TELEBIRR_USERS      1         Telebirr Registered Users 2025-06-30 2025-06-30               high
+USG_TELEBIRR_VALUE      1        Telebirr Transaction Value 2025-06-30 2025-06-30               high
+2026-02-01 20:29:12,797 - __main__ - INFO - 
+Exploring cataloged events
+2026-02-01 20:29:12,806 - __main__ - INFO - 
+Total events: 10
+2026-02-01 20:29:12,809 - __main__ - INFO - 
+Event Categories:
+category
+product_launch    2
+policy            2
+infrastructure    2
+market_entry      1
+milestone         1
+partnership       1
+pricing           1
+2026-02-01 20:29:12,813 - __main__ - INFO - 
+Event Timeline:
+record_id       category                              indicator observation_date confidence   source_name
+ EVT_0001 product_launch                        Telebirr Launch       2021-05-17       high Ethio Telecom
+ EVT_0009         policy                NFIS-II Strategy Launch       2021-09-01       high           NBE
+ EVT_0002   market_entry   Safaricom Ethiopia Commercial Launch       2022-08-01       high          News
+ EVT_0003 product_launch                 M-Pesa Ethiopia Launch       2023-08-01       high     Safaricom
+ EVT_0004 infrastructure       Fayda Digital ID Program Rollout       2024-01-01       high          NIDP
+ EVT_0005         policy        Foreign Exchange Liberalization       2024-07-29       high           NBE
+ EVT_0006      milestone    P2P Transaction Count Surpasses ATM       2024-10-01       high     EthSwitch
+ EVT_0007    partnership           M-Pesa EthSwitch Integration       2025-10-27       high     EthSwitch
+ EVT_0010        pricing      Safaricom Ethiopia Price Increase       2025-12-15       high          News
+ EVT_0008 infrastructure EthioPay Instant Payment System Launch       2025-12-18       high NBE/EthSwitch
+2026-02-01 20:29:12,815 - __main__ - INFO - 
+Exploring impact links
+2026-02-01 20:29:12,817 - __main__ - INFO - 
+Total impact links: 14
+2026-02-01 20:29:12,819 - __main__ - INFO - 
+Impact Directions:
+impact_direction
+increase    12
+decrease     2
+2026-02-01 20:29:12,820 - __main__ - INFO - 
+Evidence Basis:
+evidence_basis
+literature     7
+empirical      6
+theoretical    1
+2026-02-01 20:29:12,821 - __main__ - INFO - 
+Analyzing data quality
+2026-02-01 20:29:12,826 - __main__ - INFO - 
+Data Quality Metrics:
+2026-02-01 20:29:12,828 - __main__ - INFO -   Total observations: 30
+2026-02-01 20:29:12,828 - __main__ - INFO -   Confidence distribution: {'high': 28, 'medium': 2}
+2026-02-01 20:29:12,831 - __main__ - INFO -   Completeness: 60.1%
+2026-02-01 20:29:38,306 - __main__ - INFO - Added observation REC_0044
+2026-02-01 20:29:38,309 - __main__ - INFO - Added observation REC_0045
+2026-02-01 20:29:38,309 - __main__ - INFO - 
+Enrichment complete. Dataset now has 45 rows
+2026-02-01 20:30:31,113 - __main__ - INFO - Exported enriched data to ..\data\processed\ethiopia_fi_unified_data_enriched.csv
+2026-02-01 20:30:31,113 - __main__ - INFO - Created enrichment log at ..\data\processed\data_enrichment_log.md
+2026-02-01 20:30:31,121 - __main__ - ERROR - Error creating summary report: name 'record_types_dist' is not defined
+2026-02-01 20:40:40,327 - __main__ - INFO - ================================================================================
+2026-02-01 20:40:40,327 - __main__ - INFO - TASK 1: Data Exploration and Enrichment
+2026-02-01 20:40:40,329 - __main__ - INFO - Execution started: 2026-02-01 20:40:40.329470
+2026-02-01 20:40:40,329 - __main__ - INFO - ================================================================================
+2026-02-01 20:40:40,333 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-01 20:40:40,351 - DataLoader - INFO - Loading unified data from ..\data\raw\ethiopia_fi_unified_data.xlsx
+2026-02-01 20:40:40,615 - DataLoader - INFO - Loaded unified data: 43 rows, 34 columns
+2026-02-01 20:40:40,615 - DataLoader - INFO - Loaded impact links: 14 rows, 35 columns
+2026-02-01 20:40:40,631 - DataLoader - INFO - Loading reference codes from ..\data\raw\reference_codes.xlsx
+2026-02-01 20:40:40,635 - DataLoader - INFO - Loaded reference codes: 71 rows
+2026-02-01 20:40:40,659 - __main__ - INFO - 
+Analyzing structure of Unified Data
+2026-02-01 20:40:40,664 - __main__ - INFO - Shape: (43, 34)
+2026-02-01 20:40:40,665 - __main__ - INFO - Columns (34): ['record_id', 'record_type', 'category', 'pillar', 'indicator']...
+2026-02-01 20:40:40,665 - __main__ - INFO - Missing values: 614 total
+2026-02-01 20:40:40,665 - __main__ - INFO - Duplicate rows: 0
+2026-02-01 20:40:40,665 - __main__ - INFO - 
+Analyzing record types distribution
+2026-02-01 20:40:40,677 - __main__ - INFO - 
+Record Types Distribution:
+record_type  count  percentage
+observation     30       69.77
+      event     10       23.26
+     target      3        6.98
+2026-02-01 20:40:40,679 - __main__ - INFO - 
+Analyzing temporal coverage
+2026-02-01 20:40:40,682 - __main__ - INFO - Earliest date: 2014-12-31 00:00:00
+2026-02-01 20:40:40,684 - __main__ - INFO - Latest date: 2030-12-31 00:00:00
+2026-02-01 20:40:40,684 - __main__ - INFO - Total span: 16.0 years
+2026-02-01 20:40:40,684 - __main__ - INFO - 
+Analyzing indicator coverage
+2026-02-01 20:40:40,695 - __main__ - INFO - 
+Indicator Coverage (19 unique indicators):
+    indicator_code  count                    indicator_name   earliest     latest primary_confidence
+        ACC_4G_COV      2            4G Population Coverage 2023-06-30 2025-06-30               high
+         ACC_FAYDA      3       Fayda Digital ID Enrollment 2024-08-15 2025-05-15               high
+    ACC_MM_ACCOUNT      2         Mobile Money Account Rate 2021-12-31 2024-11-29               high
+    ACC_MOBILE_PEN      1   Mobile Subscription Penetration 2025-12-31 2025-12-31               high
+     ACC_OWNERSHIP      6            Account Ownership Rate 2014-12-31 2024-11-29               high
+   AFF_DATA_INCOME      1          Data Affordability Index 2024-12-31 2024-12-31             medium
+       GEN_GAP_ACC      2      Account Ownership Gender Gap 2021-12-31 2024-11-29               high
+    GEN_GAP_MOBILE      1           Mobile Phone Gender Gap 2024-12-31 2024-12-31               high
+      GEN_MM_SHARE      1 Female Mobile Money Account Share 2024-12-31 2024-12-31               high
+   USG_ACTIVE_RATE      1        Mobile Money Activity Rate 2024-12-31 2024-12-31               high
+     USG_ATM_COUNT      1             ATM Transaction Count 2025-07-07 2025-07-07               high
+     USG_ATM_VALUE      1             ATM Transaction Value 2025-07-07 2025-07-07               high
+     USG_CROSSOVER      1           P2P/ATM Crossover Ratio 2025-07-07 2025-07-07               high
+  USG_MPESA_ACTIVE      1        M-Pesa 90-Day Active Users 2024-12-31 2024-12-31               high
+   USG_MPESA_USERS      1           M-Pesa Registered Users 2024-12-31 2024-12-31               high
+     USG_P2P_COUNT      2             P2P Transaction Count 2024-07-07 2025-07-07               high
+     USG_P2P_VALUE      1             P2P Transaction Value 2025-07-07 2025-07-07               high
+USG_TELEBIRR_USERS      1         Telebirr Registered Users 2025-06-30 2025-06-30               high
+USG_TELEBIRR_VALUE      1        Telebirr Transaction Value 2025-06-30 2025-06-30               high
+2026-02-01 20:40:40,700 - __main__ - INFO - 
+Exploring cataloged events
+2026-02-01 20:40:40,711 - __main__ - INFO - 
+Total events: 10
+2026-02-01 20:40:40,715 - __main__ - INFO - 
+Event Categories:
+category
+product_launch    2
+policy            2
+infrastructure    2
+market_entry      1
+milestone         1
+partnership       1
+pricing           1
+2026-02-01 20:40:40,717 - __main__ - INFO - 
+Event Timeline:
+record_id       category                              indicator observation_date confidence   source_name
+ EVT_0001 product_launch                        Telebirr Launch       2021-05-17       high Ethio Telecom
+ EVT_0009         policy                NFIS-II Strategy Launch       2021-09-01       high           NBE
+ EVT_0002   market_entry   Safaricom Ethiopia Commercial Launch       2022-08-01       high          News
+ EVT_0003 product_launch                 M-Pesa Ethiopia Launch       2023-08-01       high     Safaricom
+ EVT_0004 infrastructure       Fayda Digital ID Program Rollout       2024-01-01       high          NIDP
+ EVT_0005         policy        Foreign Exchange Liberalization       2024-07-29       high           NBE
+ EVT_0006      milestone    P2P Transaction Count Surpasses ATM       2024-10-01       high     EthSwitch
+ EVT_0007    partnership           M-Pesa EthSwitch Integration       2025-10-27       high     EthSwitch
+ EVT_0010        pricing      Safaricom Ethiopia Price Increase       2025-12-15       high          News
+ EVT_0008 infrastructure EthioPay Instant Payment System Launch       2025-12-18       high NBE/EthSwitch
+2026-02-01 20:40:40,717 - __main__ - INFO - 
+Exploring impact links
+2026-02-01 20:40:40,717 - __main__ - INFO - 
+Total impact links: 14
+2026-02-01 20:40:40,717 - __main__ - INFO - 
+Impact Directions:
+impact_direction
+increase    12
+decrease     2
+2026-02-01 20:40:40,717 - __main__ - INFO - 
+Evidence Basis:
+evidence_basis
+literature     7
+empirical      6
+theoretical    1
+2026-02-01 20:40:40,717 - __main__ - INFO - 
+Analyzing data quality
+2026-02-01 20:40:40,727 - __main__ - INFO - 
+Data Quality Metrics:
+2026-02-01 20:40:40,727 - __main__ - INFO -   Total observations: 30
+2026-02-01 20:40:40,727 - __main__ - INFO -   Confidence distribution: {'high': 28, 'medium': 2}
+2026-02-01 20:40:40,727 - __main__ - INFO -   Completeness: 60.1%
+2026-02-01 20:40:40,783 - __main__ - INFO - Added observation REC_0044
+2026-02-01 20:40:40,783 - __main__ - INFO - Added observation REC_0045
+2026-02-01 20:40:40,798 - __main__ - INFO - 
+Enrichment complete. Dataset now has 45 rows
+2026-02-01 20:40:40,816 - __main__ - INFO - Exported enriched data to ..\data\processed\ethiopia_fi_unified_data_enriched.csv
+2026-02-01 20:40:40,823 - __main__ - INFO - Created enrichment log at ..\data\processed\data_enrichment_log.md
+2026-02-01 20:40:40,826 - __main__ - INFO - Created summary report at ..\data\processed\task_1_summary.json
+2026-02-01 20:40:40,833 - __main__ - INFO - 
+================================================================================
+2026-02-01 20:40:40,833 - __main__ - INFO - TASK 1 COMPLETION SUMMARY
+2026-02-01 20:40:40,833 - __main__ - INFO - ================================================================================
+2026-02-01 20:40:40,833 - __main__ - INFO - 
+1. DATASET STRUCTURE
+2026-02-01 20:40:40,843 - __main__ - INFO -    - Total records: 45
+2026-02-01 20:40:40,844 - __main__ - INFO -    - Total columns: 34
+2026-02-01 20:40:40,844 - __main__ - INFO -    - Enrichments added: 2
+2026-02-01 20:40:40,844 - __main__ - INFO - 
+2. RECORD TYPE DISTRIBUTION
+2026-02-01 20:40:40,844 - __main__ - INFO -    - observation: 30 (69.77%)
+2026-02-01 20:40:40,844 - __main__ - INFO -    - event: 10 (23.26%)
+2026-02-01 20:40:40,849 - __main__ - INFO -    - target: 3 (6.98%)
+2026-02-01 20:40:40,849 - __main__ - INFO - 
+3. TEMPORAL COVERAGE
+2026-02-01 20:40:40,849 - __main__ - INFO -    - Earliest date: 2014-12-31
+2026-02-01 20:40:40,849 - __main__ - INFO -    - Latest date: 2030-12-31
+2026-02-01 20:40:40,849 - __main__ - INFO -    - Time span: 16.0 years
+2026-02-01 20:40:40,849 - __main__ - INFO - 
+4. KEY INDICATORS TRACKED
+2026-02-01 20:40:40,855 - __main__ - INFO -    - ACC_4G_COV: 2 observations (high confidence)
+2026-02-01 20:40:40,855 - __main__ - INFO -    - ACC_FAYDA: 3 observations (high confidence)
+2026-02-01 20:40:40,855 - __main__ - INFO -    - ACC_MM_ACCOUNT: 2 observations (high confidence)
+2026-02-01 20:40:40,855 - __main__ - INFO -    - ACC_MOBILE_PEN: 1 observations (high confidence)
+2026-02-01 20:40:40,855 - __main__ - INFO -    - ACC_OWNERSHIP: 6 observations (high confidence)
+2026-02-01 20:40:40,855 - __main__ - INFO -    - AFF_DATA_INCOME: 1 observations (medium confidence)
+2026-02-01 20:40:40,855 - __main__ - INFO -    - GEN_GAP_ACC: 2 observations (high confidence)
+2026-02-01 20:40:40,855 - __main__ - INFO -    - GEN_GAP_MOBILE: 1 observations (high confidence)
+2026-02-01 20:40:40,864 - __main__ - INFO -    - GEN_MM_SHARE: 1 observations (high confidence)
+2026-02-01 20:40:40,865 - __main__ - INFO -    - USG_ACTIVE_RATE: 1 observations (high confidence)
+2026-02-01 20:40:40,865 - __main__ - INFO -    - USG_ATM_COUNT: 1 observations (high confidence)
+2026-02-01 20:40:40,865 - __main__ - INFO -    - USG_ATM_VALUE: 1 observations (high confidence)
+2026-02-01 20:40:40,865 - __main__ - INFO -    - USG_CROSSOVER: 1 observations (high confidence)
+2026-02-01 20:40:40,869 - __main__ - INFO -    - USG_MPESA_ACTIVE: 1 observations (high confidence)
+2026-02-01 20:40:40,869 - __main__ - INFO -    - USG_MPESA_USERS: 1 observations (high confidence)
+2026-02-01 20:40:40,869 - __main__ - INFO -    - USG_P2P_COUNT: 2 observations (high confidence)
+2026-02-01 20:40:40,869 - __main__ - INFO -    - USG_P2P_VALUE: 1 observations (high confidence)
+2026-02-01 20:40:40,869 - __main__ - INFO -    - USG_TELEBIRR_USERS: 1 observations (high confidence)
+2026-02-01 20:40:40,869 - __main__ - INFO -    - USG_TELEBIRR_VALUE: 1 observations (high confidence)
+2026-02-01 20:40:40,869 - __main__ - INFO - 
+5. DATA QUALITY
+2026-02-01 20:40:40,869 - __main__ - INFO -    - Total observations: 30
+2026-02-01 20:40:40,869 - __main__ - INFO -    - Completeness: 60.1%
+2026-02-01 20:40:40,869 - __main__ - INFO -    - High confidence records: 28
+2026-02-01 20:40:40,869 - __main__ - INFO -    - Medium confidence records: 2
+2026-02-01 20:40:40,869 - __main__ - INFO - 
+6. EXPORTED FILES
+2026-02-01 20:40:40,879 - __main__ - INFO -    - Enriched data: ..\data\processed\ethiopia_fi_unified_data_enriched.csv
+2026-02-01 20:40:40,879 - __main__ - INFO -    - Enrichment log: ..\data\processed\data_enrichment_log.md
+2026-02-01 20:40:40,882 - __main__ - INFO -    - Summary report: ..\data\processed\task_1_summary.json
+2026-02-01 20:40:40,883 - __main__ - INFO - 
+================================================================================
+2026-02-01 20:40:40,883 - __main__ - INFO - Task 1 completed successfully at 2026-02-01 20:40:40.883163
+2026-02-01 20:40:40,883 - __main__ - INFO - ================================================================================
+
