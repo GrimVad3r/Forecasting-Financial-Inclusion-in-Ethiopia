@@ -371,9 +371,9 @@ class CorrelationAnalyzer:
         # 2. Define the mapping based on your requirements
         # We assign numbers so nlargest can identify "High" as the top value
         impact_map = {
-            'High': 20.0,   # Representative value > 15%
-            'Medium': 10.0, # Representative value between 5-15%
-            'Low': 3.0      # Representative value < 5%
+            'high': 20.0,   # Representative value > 15%
+            'medium': 10.0, # Representative value between 5-15%
+            'low': 3.0      # Representative value < 5%
         }
         
         # 3. Convert the string column to numeric

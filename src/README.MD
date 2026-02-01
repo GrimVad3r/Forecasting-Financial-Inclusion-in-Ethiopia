@@ -16,6 +16,7 @@ The toolkit consists of five core modules, each handling a specific stage of the
 | `data_enricher.py` | Core engine for adding new observations and events with built-in validation. |
 | `data_explorer.py` | Conducts deep dives into event timelines and data quality metrics. |
 | `data_exporter.py` | Saves enriched data and generates Markdown/JSON documentation and reports. |
+| `comprehensive_analyzer.py` | Perfrorms Various Analysis & returns results |
 
 ---
 
@@ -59,6 +60,56 @@ The final stage of the pipeline.
 * **Enrichment Log**: Generates a `.md` file detailing every action taken during the session.
 * **Summary Report**: Produces a `.json` snapshot of the final record distribution and metadata.
 
+### 6. Feature Spotlight: Comprehensive Analyzer
+
+The `comprehensive_analyzer.py` module provides high-level synthesis of financial inclusion drivers:
+
+#### 1. Thematic Analysis Engines
+
+* **AccessAnalyzer**: Tracks account ownership trajectories and mobile money penetration.
+* **UsageAnalyzer**: Monitors digital payment adoption and the "Registered vs. Active" user gap.
+* **InfrastructureAnalyzer**: Evaluates 4G coverage, smartphone penetration, and Fayda Digital ID enrollment.
+* **CorrelationAnalyzer**: Maps "Impact Links" to identify drivers of financial inclusion and estimated magnitudes.
+
+#### 2. Insight & Hypothesis Generation
+
+The module synthesizes raw data into actionable intelligence:
+
+* **The Stagnation Paradox**: Identifying why account ownership grows slowly despite massive mobile money expansion.
+* **Gender Gap Analysis**: Quantifying the persistent 20pp gap between male and female account ownership.
+* **Event Impact**: Correlating major market entries (Telebirr, Safaricom, M-Pesa) with indicator shifts.
+
+---
+
+## ## Advanced Usage Example
+
+The `comprehensive_analyzer` is designed to be run after data enrichment to extract strategic value:
+
+```python
+from comprehensive_analyzer import InsightSummarizer, AccessAnalyzer
+
+# Initialize analyzers
+access_engine = AccessAnalyzer()
+summarizer = InsightSummarizer()
+
+# Analyze gender disparities
+gender_gap = access_engine.analyze_gender_gap(unified_df)
+
+# Generate strategic insights and modeling hypotheses
+insights = summarizer.generate_insights()
+hypotheses = summarizer.generate_hypotheses()
+
+```
+
+---
+
+## ## Data Quality & Gaps
+
+The toolkit now automatically identifies critical data limitations:
+
+* **Recent Data Gaps**: Flags indicators that haven't been updated since 2024.
+* **Sparse Observations**: Highlights reliance on limited survey points (e.g., only 5 points over 13 years for account ownership).
+* **Missing Variables**: Notes the absence of agent density, merchant acceptance, and regional disparity data.
 ---
 
 ## ## Logging and Audit

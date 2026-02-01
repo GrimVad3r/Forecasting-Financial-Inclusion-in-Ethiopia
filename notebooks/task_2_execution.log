@@ -511,3 +511,873 @@ H6: Usage adoption (digital payments) will accelerate post-2025 as smartphone/4G
 2026-02-01 21:16:41,056 - __main__ - INFO - Task 2 completed successfully at 2026-02-01 21:16:41.056913
 2026-02-01 21:16:41,057 - __main__ - INFO - ================================================================================
 
+2026-02-01 21:39:32,971 - visualization_suite - INFO - Saved ownership plot to plots\account_ownership_trend.png
+2026-02-01 21:40:11,566 - AccessAnalyzer - INFO - 
+============================================================
+2026-02-01 21:40:11,567 - AccessAnalyzer - INFO - ACCOUNT OWNERSHIP ANALYSIS
+2026-02-01 21:40:11,567 - AccessAnalyzer - INFO - ============================================================
+2026-02-01 21:40:11,567 - AccessAnalyzer - INFO - 
+Account Ownership Trajectory (2011-2024):
+2026-02-01 21:40:11,575 - AccessAnalyzer - INFO -   observation_date  value_numeric  gender
+0       2014-12-31           22.0     all
+1       2017-12-31           35.0     all
+2       2021-12-31           46.0     all
+3       2021-12-31           56.0    male
+4       2021-12-31           36.0  female
+5       2024-11-29           49.0     all
+2026-02-01 21:40:11,579 - AccessAnalyzer - INFO - 
+Growth Rates:
+2026-02-01 21:40:11,582 - AccessAnalyzer - INFO -   observation_date  value_numeric  growth_pp  growth_pct
+0       2014-12-31           22.0        NaN         NaN
+1       2017-12-31           35.0       13.0   59.090909
+2       2021-12-31           46.0       11.0   31.428571
+5       2024-11-29           49.0        3.0    6.521739
+2026-02-01 21:40:11,582 - UsageAnalyzer - INFO - 
+------------------------------------------------------------
+2026-02-01 21:40:11,582 - UsageAnalyzer - INFO - REGISTERED vs ACTIVE USAGE GAP
+2026-02-01 21:40:11,582 - UsageAnalyzer - INFO - ------------------------------------------------------------
+2026-02-01 21:43:09,763 - visualization_suite - INFO - Saved ownership plot to output\plots\account_ownership_trend.png
+2026-02-01 21:46:35,246 - visualization_suite - INFO - Saved ownership plot to output\plots\account_ownership_trend.png
+2026-02-01 21:46:54,827 - __main__ - INFO - ================================================================================
+2026-02-01 21:46:54,830 - __main__ - INFO - TASK 2: Exploratory Data Analysis
+2026-02-01 21:46:54,832 - __main__ - INFO - Execution started: 2026-02-01 21:46:54.832624
+2026-02-01 21:46:54,834 - __main__ - INFO - ================================================================================
+2026-02-01 21:46:54,857 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-01 21:46:54,877 - __main__ - INFO - Loaded enriched data: 45 rows, 34 columns
+2026-02-01 21:46:54,905 - __main__ - INFO - 
+Assessing data completeness
+2026-02-01 21:46:54,909 - __main__ - INFO - Total cells: 1530
+2026-02-01 21:46:54,911 - __main__ - INFO - Missing cells: 650
+2026-02-01 21:46:54,913 - __main__ - INFO - Completeness: 57.52%
+2026-02-01 21:46:54,915 - __main__ - INFO - 
+Assessing confidence levels
+2026-02-01 21:46:54,919 - __main__ - INFO - 
+Confidence Distribution:
+confidence
+high      41
+medium     4
+Name: count, dtype: int64
+2026-02-01 21:46:54,920 - __main__ - INFO - 
+Identifying data gaps
+2026-02-01 21:46:54,937 - __main__ - INFO - 
+Indicators with missing recent data: 0
+2026-02-01 21:46:54,948 - __main__ - INFO - 
+============================================================
+2026-02-01 21:46:54,949 - __main__ - INFO - ACCOUNT OWNERSHIP ANALYSIS
+2026-02-01 21:46:54,950 - __main__ - INFO - ============================================================
+2026-02-01 21:46:54,954 - __main__ - INFO - 
+Account Ownership Trajectory (2011-2024):
+2026-02-01 21:46:54,961 - __main__ - INFO -   observation_date  value_numeric  gender
+0       2014-12-31           22.0     all
+1       2017-12-31           35.0     all
+2       2021-12-31           46.0     all
+3       2021-12-31           56.0    male
+4       2021-12-31           36.0  female
+5       2024-11-29           49.0     all
+2026-02-01 21:46:54,963 - __main__ - INFO - 
+Growth Rates:
+2026-02-01 21:46:54,966 - __main__ - INFO -   observation_date  value_numeric  growth_pp  growth_pct
+0       2014-12-31           22.0        NaN         NaN
+1       2017-12-31           35.0       13.0   59.090909
+2       2021-12-31           46.0       11.0   31.428571
+5       2024-11-29           49.0        3.0    6.521739
+2026-02-01 21:46:54,967 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:54,967 - __main__ - INFO - GENDER GAP ANALYSIS
+2026-02-01 21:46:54,968 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:54,975 - __main__ - INFO - 2021: Male=56.0%, Female=36.0%, Gap=20.0pp
+2026-02-01 21:46:54,978 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:54,979 - __main__ - INFO - MOBILE MONEY ACCOUNT ANALYSIS
+2026-02-01 21:46:54,980 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:54,982 - __main__ - INFO - 
+Mobile Money Account Rate (2021-2024):
+2026-02-01 21:46:54,983 - __main__ - INFO -   observation_date  value_numeric
+6       2021-12-31           4.70
+7       2024-11-29           9.45
+2026-02-01 21:46:54,984 - __main__ - INFO - 
+Growth (2021-2024): 4.75pp (101.1%)
+2026-02-01 21:46:54,991 - __main__ - INFO - 
+============================================================
+2026-02-01 21:46:54,992 - __main__ - INFO - DIGITAL PAYMENT ADOPTION ANALYSIS
+2026-02-01 21:46:54,993 - __main__ - INFO - ============================================================
+2026-02-01 21:46:54,997 - __main__ - INFO - P2P Transaction Count: 128300000.00 (as of 2025-07-07)
+2026-02-01 21:46:55,001 - __main__ - INFO - Telebirr Users: 54840000.00 (as of 2025-06-30)
+2026-02-01 21:46:55,003 - __main__ - INFO - M-Pesa Users: 10800000.00 (as of 2024-12-31)
+2026-02-01 21:46:55,003 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:55,004 - __main__ - INFO - P2P TRANSACTION ANALYSIS
+2026-02-01 21:46:55,005 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:55,007 - __main__ - INFO - 
+P2P Transaction Volume:
+2026-02-01 21:46:55,009 - __main__ - INFO -    observation_date  value_numeric
+14       2024-07-07     49700000.0
+15       2025-07-07    128300000.0
+2026-02-01 21:46:55,011 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:55,012 - __main__ - INFO - REGISTERED vs ACTIVE USAGE GAP
+2026-02-01 21:46:55,013 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:55,023 - __main__ - INFO - 
+============================================================
+2026-02-01 21:46:55,024 - __main__ - INFO - INFRASTRUCTURE AND ENABLERS ANALYSIS
+2026-02-01 21:46:55,026 - __main__ - INFO - ============================================================
+2026-02-01 21:46:55,029 - __main__ - INFO - 4G Coverage: 75.00 % (as of 2025-12-31)
+2026-02-01 21:46:55,031 - __main__ - INFO - Mobile Penetration: 61.40 % (as of 2025-12-31)
+2026-02-01 21:46:55,032 - __main__ - INFO - Smartphone Penetration: 28.50 % (as of 2025-12-31)
+2026-02-01 21:46:55,034 - __main__ - INFO - Fayda Digital ID: 15000000.00 people (as of 2025-05-15)
+2026-02-01 21:46:55,035 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:55,036 - __main__ - INFO - POTENTIAL LEADING INDICATORS
+2026-02-01 21:46:55,036 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:55,037 - __main__ - INFO -   • Smartphone Penetration (ACC_SMARTPHONE)
+2026-02-01 21:46:55,038 - __main__ - INFO -   • 4G Population Coverage (ACC_4G_COV)
+2026-02-01 21:46:55,038 - __main__ - INFO -   • Fayda Digital ID Enrollment (ACC_FAYDA)
+2026-02-01 21:46:55,039 - __main__ - INFO -   • Mobile Internet Penetration (implied by mobile + data)
+2026-02-01 21:46:55,041 - __main__ - INFO -   • Agent Network Density (from bank sources)
+2026-02-01 21:46:55,042 - __main__ - INFO -   • Data Affordability (ITU data)
+2026-02-01 21:46:55,044 - __main__ - INFO -   • Urbanization Rate
+2026-02-01 21:46:55,058 - __main__ - INFO - 
+============================================================
+2026-02-01 21:46:55,061 - __main__ - INFO - EVENT TIMELINE ANALYSIS
+2026-02-01 21:46:55,063 - __main__ - INFO - ============================================================
+2026-02-01 21:46:55,069 - __main__ - INFO - 
+Total Events Cataloged: 10
+2026-02-01 21:46:55,071 - __main__ - INFO - 
+Event Distribution by Category:
+2026-02-01 21:46:55,073 - __main__ - INFO - category
+product_launch    2
+policy            2
+infrastructure    2
+market_entry      1
+milestone         1
+partnership       1
+pricing           1
+Name: count, dtype: int64
+2026-02-01 21:46:55,075 - __main__ - INFO - 
+Event Timeline (2021-2025):
+2026-02-01 21:46:55,076 - __main__ - INFO -   2021-05-17: product_launch - Telebirr Launch
+2026-02-01 21:46:55,077 - __main__ - INFO -   2021-09-01: policy - NFIS-II Strategy Launch
+2026-02-01 21:46:55,078 - __main__ - INFO -   2022-08-01: market_entry - Safaricom Ethiopia Commercial Launch
+2026-02-01 21:46:55,079 - __main__ - INFO -   2023-08-01: product_launch - M-Pesa Ethiopia Launch
+2026-02-01 21:46:55,080 - __main__ - INFO -   2024-01-01: infrastructure - Fayda Digital ID Program Rollout
+2026-02-01 21:46:55,081 - __main__ - INFO -   2024-07-29: policy - Foreign Exchange Liberalization
+2026-02-01 21:46:55,081 - __main__ - INFO -   2024-10-01: milestone - P2P Transaction Count Surpasses ATM
+2026-02-01 21:46:55,082 - __main__ - INFO -   2025-10-27: partnership - M-Pesa EthSwitch Integration
+2026-02-01 21:46:55,083 - __main__ - INFO -   2025-12-15: pricing - Safaricom Ethiopia Price Increase
+2026-02-01 21:46:55,084 - __main__ - INFO -   2025-12-18: infrastructure - EthioPay Instant Payment System Launch
+2026-02-01 21:46:55,086 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:55,086 - __main__ - INFO - KEY EVENTS AND THEIR IMPACTS
+2026-02-01 21:46:55,088 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:55,092 - __main__ - INFO - 
+Key Events Identified:
+2026-02-01 21:46:55,092 - __main__ - INFO -   • Telebirr Launch: 2021-05
+2026-02-01 21:46:55,093 - __main__ - INFO -   • Safaricom Market Entry: 2022-08
+2026-02-01 21:46:55,093 - __main__ - INFO -   • M-Pesa Launch: 2023-08
+2026-02-01 21:46:55,094 - __main__ - INFO -   • Fayda Digital ID Expansion: 2024-01
+2026-02-01 21:46:55,095 - __main__ - INFO -   • FX Reform: 2024-07
+2026-02-01 21:46:55,357 - __main__ - INFO - 
+============================================================
+2026-02-01 21:46:55,359 - __main__ - INFO - IMPACT LINK RELATIONSHIPS
+2026-02-01 21:46:55,360 - __main__ - INFO - ============================================================
+2026-02-01 21:46:55,363 - __main__ - INFO - 
+Total Impact Relationships: 0
+2026-02-01 21:46:55,365 - __main__ - INFO - 
+Impact Direction Distribution:
+impact_direction
+increase    12
+decrease     2
+Name: count, dtype: int64
+2026-02-01 21:46:55,366 - __main__ - INFO - 
+Top Impact Magnitudes (Mapped):
+2026-02-01 21:46:55,369 - __main__ - INFO - Empty DataFrame
+Columns: [parent_id, indicator_code, impact_magnitude, lag_months]
+Index: []
+2026-02-01 21:46:55,383 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:55,385 - __main__ - INFO - ACCESS DRIVERS
+2026-02-01 21:46:55,385 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:55,388 - __main__ - INFO - 
+Factors affecting Account Ownership:
+2026-02-01 21:46:55,411 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:46:55,413 - __main__ - INFO - USAGE DRIVERS
+2026-02-01 21:46:55,414 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:46:55,418 - __main__ - INFO - 
+Factors affecting Digital Payment Usage:
+2026-02-01 21:46:55,434 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:46:55,436 - __main__ - INFO - KEY INSIGHTS FROM EDA
+2026-02-01 21:46:55,437 - __main__ - INFO - ================================================================================
+2026-02-01 21:46:55,440 - __main__ - INFO - 
+1. STAGNATION PARADOX: Account ownership grew only +3pp (46% to 49%) from 2021-2024, despite mobile money accounts more than doubling from 4.7% to 9.45%. This suggests existing bank accounts dominate the ownership metric and mobile money is not significantly increasing 'any account' ownership.
+2026-02-01 21:46:55,442 - __main__ - INFO - 
+2. PERSISTENT GENDER GAP: A 20pp gender gap exists (56% male vs 36% female ownership in 2021), unchanged or widened despite policy attention. Gender-specific barriers (ID access, phone ownership, cultural factors) persist despite infrastructure improvements.
+2026-02-01 21:46:55,444 - __main__ - INFO - 
+3. REGISTERED vs ACTIVE GAP: Mobile money accounts (9.45%) exceed digital payment adoption (~35% for broader payments), suggesting many registered accounts are inactive. High registration but low engagement indicates onboarding without sustained use.
+2026-02-01 21:46:55,446 - __main__ - INFO - 
+4. P2P DOMINANCE IN ETHIOPIA: Unlike global norms, digital payments in Ethiopia are heavily P2P-driven (for goods/services, not just transfers). This market nuance requires adapted baselines and program design assumptions.
+2026-02-01 21:46:55,447 - __main__ - INFO - 
+5. INFRASTRUCTURE INVESTMENT SCALING: 4G coverage doubled (37.5% to 70.8% in 2025), smartphone penetration rising (~28.5% in 2025), and Fayda digital ID enrollment (15M+) creating enabling conditions. However, asset availability hasn't yet translated to usage.
+2026-02-01 21:46:55,449 - __main__ - INFO - 
+6. EVENT TIMING vs OUTCOMES: Despite Telebirr (May 2021), Safaricom (Aug 2022), and M-Pesa (Aug 2023) entries, account ownership stagnated. Suggests events may have substitution effects (shifting users between providers) rather than driving net new inclusion.
+2026-02-01 21:46:55,450 - __main__ - INFO - 
+7. DATA QUALITY LIMITATIONS: Account ownership data relies on 5 survey points over 13 years. Sparse observations limit granular trend analysis. P2P and transaction data are more recent (2023+) but have limited history for forecasting.
+2026-02-01 21:46:55,451 - __main__ - INFO - 
+8. CRITICAL DATA GAPS: Missing data on agent density, merchant acceptance, remittance flows, credit penetration, and regional disparities. These gaps limit ability to model local inclusion drivers and identify underserved areas.
+2026-02-01 21:46:55,452 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:46:55,454 - __main__ - INFO - HYPOTHESES FOR IMPACT MODELING
+2026-02-01 21:46:55,455 - __main__ - INFO - ================================================================================
+2026-02-01 21:46:55,457 - __main__ - INFO - 
+H1: Infrastructure expansion (4G, smartphone) is a necessary but not sufficient condition. Usage adoption requires complementary factors (agent density, merchant acceptance, education).
+2026-02-01 21:46:55,458 - __main__ - INFO - 
+H2: Digital ID (Fayda) enrollment will have delayed but significant impact on account ownership (2024 launch, expected 12-24 month lag for behavioral adoption).
+2026-02-01 21:46:55,460 - __main__ - INFO - 
+H3: Mobile money competition (Telebirr + M-Pesa) drove user substitution rather than net new inclusion, explaining stagnation in 'any account' ownership despite account volume growth.
+2026-02-01 21:46:55,461 - __main__ - INFO - 
+H4: Gender gap is driven by structural barriers (ID access, phone ownership, financial literacy) that will not resolve through infrastructure investment alone. Requires targeted interventions.
+2026-02-01 21:46:55,462 - __main__ - INFO - 
+H5: Regional variation (urban/rural) is larger than national aggregates suggest. Urban centers likely at 60%+ adoption while rural areas lag significantly, masking divergent dynamics.
+2026-02-01 21:46:55,462 - __main__ - INFO - 
+H6: Usage adoption (digital payments) will accelerate post-2025 as smartphone/4G/ID base reaches critical mass. Current 35% digital payment rate has ceiling for growth.
+2026-02-01 21:46:55,464 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:46:55,465 - __main__ - INFO - Task 2 completed successfully at 2026-02-01 21:46:55.465056
+2026-02-01 21:46:55,467 - __main__ - INFO - ================================================================================
+
+2026-02-01 21:46:55,787 - visualization_suite - INFO - Saved ownership plot to output\plots\account_ownership_trend.png
+2026-02-01 21:47:54,006 - visualization_suite - INFO - Saved ownership plot to output\plots\account_ownership_trend.png
+2026-02-01 21:52:26,238 - __main__ - INFO - ================================================================================
+2026-02-01 21:52:26,244 - __main__ - INFO - TASK 2: Exploratory Data Analysis
+2026-02-01 21:52:26,244 - __main__ - INFO - Execution started: 2026-02-01 21:52:26.244805
+2026-02-01 21:52:26,244 - __main__ - INFO - ================================================================================
+2026-02-01 21:52:26,257 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-01 21:52:26,279 - __main__ - INFO - Loaded enriched data: 45 rows, 34 columns
+2026-02-01 21:52:26,299 - __main__ - INFO - 
+Assessing data completeness
+2026-02-01 21:52:26,299 - __main__ - INFO - Total cells: 1530
+2026-02-01 21:52:26,299 - __main__ - INFO - Missing cells: 650
+2026-02-01 21:52:26,299 - __main__ - INFO - Completeness: 57.52%
+2026-02-01 21:52:26,308 - __main__ - INFO - 
+Assessing confidence levels
+2026-02-01 21:52:26,310 - __main__ - INFO - 
+Confidence Distribution:
+confidence
+high      41
+medium     4
+Name: count, dtype: int64
+2026-02-01 21:52:26,311 - __main__ - INFO - 
+Identifying data gaps
+2026-02-01 21:52:26,326 - __main__ - INFO - 
+Indicators with missing recent data: 0
+2026-02-01 21:52:26,340 - __main__ - INFO - 
+============================================================
+2026-02-01 21:52:26,344 - __main__ - INFO - ACCOUNT OWNERSHIP ANALYSIS
+2026-02-01 21:52:26,344 - __main__ - INFO - ============================================================
+2026-02-01 21:52:26,350 - __main__ - INFO - 
+Account Ownership Trajectory (2011-2024):
+2026-02-01 21:52:26,356 - __main__ - INFO -   observation_date  value_numeric  gender
+0       2014-12-31           22.0     all
+1       2017-12-31           35.0     all
+2       2021-12-31           46.0     all
+3       2021-12-31           56.0    male
+4       2021-12-31           36.0  female
+5       2024-11-29           49.0     all
+2026-02-01 21:52:26,356 - __main__ - INFO - 
+Growth Rates:
+2026-02-01 21:52:26,360 - __main__ - INFO -   observation_date  value_numeric  growth_pp  growth_pct
+0       2014-12-31           22.0        NaN         NaN
+1       2017-12-31           35.0       13.0   59.090909
+2       2021-12-31           46.0       11.0   31.428571
+5       2024-11-29           49.0        3.0    6.521739
+2026-02-01 21:52:26,360 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,364 - __main__ - INFO - GENDER GAP ANALYSIS
+2026-02-01 21:52:26,364 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,376 - __main__ - INFO - 2021: Male=56.0%, Female=36.0%, Gap=20.0pp
+2026-02-01 21:52:26,377 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,380 - __main__ - INFO - MOBILE MONEY ACCOUNT ANALYSIS
+2026-02-01 21:52:26,380 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,380 - __main__ - INFO - 
+Mobile Money Account Rate (2021-2024):
+2026-02-01 21:52:26,380 - __main__ - INFO -   observation_date  value_numeric
+6       2021-12-31           4.70
+7       2024-11-29           9.45
+2026-02-01 21:52:26,380 - __main__ - INFO - 
+Growth (2021-2024): 4.75pp (101.1%)
+2026-02-01 21:52:26,394 - __main__ - INFO - 
+============================================================
+2026-02-01 21:52:26,394 - __main__ - INFO - DIGITAL PAYMENT ADOPTION ANALYSIS
+2026-02-01 21:52:26,394 - __main__ - INFO - ============================================================
+2026-02-01 21:52:26,394 - __main__ - INFO - P2P Transaction Count: 128300000.00 (as of 2025-07-07)
+2026-02-01 21:52:26,394 - __main__ - INFO - Telebirr Users: 54840000.00 (as of 2025-06-30)
+2026-02-01 21:52:26,394 - __main__ - INFO - M-Pesa Users: 10800000.00 (as of 2024-12-31)
+2026-02-01 21:52:26,394 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,394 - __main__ - INFO - P2P TRANSACTION ANALYSIS
+2026-02-01 21:52:26,394 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,408 - __main__ - INFO - 
+P2P Transaction Volume:
+2026-02-01 21:52:26,411 - __main__ - INFO -    observation_date  value_numeric
+14       2024-07-07     49700000.0
+15       2025-07-07    128300000.0
+2026-02-01 21:52:26,411 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,411 - __main__ - INFO - REGISTERED vs ACTIVE USAGE GAP
+2026-02-01 21:52:26,415 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,424 - __main__ - INFO - 
+============================================================
+2026-02-01 21:52:26,424 - __main__ - INFO - INFRASTRUCTURE AND ENABLERS ANALYSIS
+2026-02-01 21:52:26,424 - __main__ - INFO - ============================================================
+2026-02-01 21:52:26,429 - __main__ - INFO - 4G Coverage: 75.00 % (as of 2025-12-31)
+2026-02-01 21:52:26,431 - __main__ - INFO - Mobile Penetration: 61.40 % (as of 2025-12-31)
+2026-02-01 21:52:26,431 - __main__ - INFO - Smartphone Penetration: 28.50 % (as of 2025-12-31)
+2026-02-01 21:52:26,431 - __main__ - INFO - Fayda Digital ID: 15000000.00 people (as of 2025-05-15)
+2026-02-01 21:52:26,431 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,431 - __main__ - INFO - POTENTIAL LEADING INDICATORS
+2026-02-01 21:52:26,439 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,439 - __main__ - INFO -   • Smartphone Penetration (ACC_SMARTPHONE)
+2026-02-01 21:52:26,439 - __main__ - INFO -   • 4G Population Coverage (ACC_4G_COV)
+2026-02-01 21:52:26,439 - __main__ - INFO -   • Fayda Digital ID Enrollment (ACC_FAYDA)
+2026-02-01 21:52:26,443 - __main__ - INFO -   • Mobile Internet Penetration (implied by mobile + data)
+2026-02-01 21:52:26,443 - __main__ - INFO -   • Agent Network Density (from bank sources)
+2026-02-01 21:52:26,444 - __main__ - INFO -   • Data Affordability (ITU data)
+2026-02-01 21:52:26,444 - __main__ - INFO -   • Urbanization Rate
+2026-02-01 21:52:26,447 - __main__ - INFO - 
+============================================================
+2026-02-01 21:52:26,447 - __main__ - INFO - EVENT TIMELINE ANALYSIS
+2026-02-01 21:52:26,447 - __main__ - INFO - ============================================================
+2026-02-01 21:52:26,455 - __main__ - INFO - 
+Total Events Cataloged: 10
+2026-02-01 21:52:26,460 - __main__ - INFO - 
+Event Distribution by Category:
+2026-02-01 21:52:26,460 - __main__ - INFO - category
+product_launch    2
+policy            2
+infrastructure    2
+market_entry      1
+milestone         1
+partnership       1
+pricing           1
+Name: count, dtype: int64
+2026-02-01 21:52:26,460 - __main__ - INFO - 
+Event Timeline (2021-2025):
+2026-02-01 21:52:26,467 - __main__ - INFO -   2021-05-17: product_launch - Telebirr Launch
+2026-02-01 21:52:26,469 - __main__ - INFO -   2021-09-01: policy - NFIS-II Strategy Launch
+2026-02-01 21:52:26,471 - __main__ - INFO -   2022-08-01: market_entry - Safaricom Ethiopia Commercial Launch
+2026-02-01 21:52:26,471 - __main__ - INFO -   2023-08-01: product_launch - M-Pesa Ethiopia Launch
+2026-02-01 21:52:26,474 - __main__ - INFO -   2024-01-01: infrastructure - Fayda Digital ID Program Rollout
+2026-02-01 21:52:26,476 - __main__ - INFO -   2024-07-29: policy - Foreign Exchange Liberalization
+2026-02-01 21:52:26,478 - __main__ - INFO -   2024-10-01: milestone - P2P Transaction Count Surpasses ATM
+2026-02-01 21:52:26,480 - __main__ - INFO -   2025-10-27: partnership - M-Pesa EthSwitch Integration
+2026-02-01 21:52:26,480 - __main__ - INFO -   2025-12-15: pricing - Safaricom Ethiopia Price Increase
+2026-02-01 21:52:26,483 - __main__ - INFO -   2025-12-18: infrastructure - EthioPay Instant Payment System Launch
+2026-02-01 21:52:26,487 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,487 - __main__ - INFO - KEY EVENTS AND THEIR IMPACTS
+2026-02-01 21:52:26,489 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,493 - __main__ - INFO - 
+Key Events Identified:
+2026-02-01 21:52:26,493 - __main__ - INFO -   • Telebirr Launch: 2021-05
+2026-02-01 21:52:26,493 - __main__ - INFO -   • Safaricom Market Entry: 2022-08
+2026-02-01 21:52:26,493 - __main__ - INFO -   • M-Pesa Launch: 2023-08
+2026-02-01 21:52:26,493 - __main__ - INFO -   • Fayda Digital ID Expansion: 2024-01
+2026-02-01 21:52:26,493 - __main__ - INFO -   • FX Reform: 2024-07
+2026-02-01 21:52:26,697 - __main__ - INFO - 
+============================================================
+2026-02-01 21:52:26,707 - __main__ - INFO - IMPACT LINK RELATIONSHIPS
+2026-02-01 21:52:26,707 - __main__ - INFO - ============================================================
+2026-02-01 21:52:26,711 - __main__ - INFO - 
+Total Impact Relationships: 0
+2026-02-01 21:52:26,713 - __main__ - INFO - 
+Impact Direction Distribution:
+impact_direction
+increase    12
+decrease     2
+Name: count, dtype: int64
+2026-02-01 21:52:26,715 - __main__ - INFO - 
+Top Impact Magnitudes (Mapped):
+2026-02-01 21:52:26,715 - __main__ - INFO - Empty DataFrame
+Columns: [parent_id, indicator_code, impact_magnitude, lag_months]
+Index: []
+2026-02-01 21:52:26,735 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,735 - __main__ - INFO - ACCESS DRIVERS
+2026-02-01 21:52:26,735 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,740 - __main__ - INFO - 
+Factors affecting Account Ownership:
+2026-02-01 21:52:26,743 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:52:26,755 - __main__ - INFO - USAGE DRIVERS
+2026-02-01 21:52:26,755 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:52:26,755 - __main__ - INFO - 
+Factors affecting Digital Payment Usage:
+2026-02-01 21:52:26,771 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:52:26,773 - __main__ - INFO - KEY INSIGHTS FROM EDA
+2026-02-01 21:52:26,773 - __main__ - INFO - ================================================================================
+2026-02-01 21:52:26,776 - __main__ - INFO - 
+1. STAGNATION PARADOX: Account ownership grew only +3pp (46% to 49%) from 2021-2024, despite mobile money accounts more than doubling from 4.7% to 9.45%. This suggests existing bank accounts dominate the ownership metric and mobile money is not significantly increasing 'any account' ownership.
+2026-02-01 21:52:26,776 - __main__ - INFO - 
+2. PERSISTENT GENDER GAP: A 20pp gender gap exists (56% male vs 36% female ownership in 2021), unchanged or widened despite policy attention. Gender-specific barriers (ID access, phone ownership, cultural factors) persist despite infrastructure improvements.
+2026-02-01 21:52:26,776 - __main__ - INFO - 
+3. REGISTERED vs ACTIVE GAP: Mobile money accounts (9.45%) exceed digital payment adoption (~35% for broader payments), suggesting many registered accounts are inactive. High registration but low engagement indicates onboarding without sustained use.
+2026-02-01 21:52:26,776 - __main__ - INFO - 
+4. P2P DOMINANCE IN ETHIOPIA: Unlike global norms, digital payments in Ethiopia are heavily P2P-driven (for goods/services, not just transfers). This market nuance requires adapted baselines and program design assumptions.
+2026-02-01 21:52:26,776 - __main__ - INFO - 
+5. INFRASTRUCTURE INVESTMENT SCALING: 4G coverage doubled (37.5% to 70.8% in 2025), smartphone penetration rising (~28.5% in 2025), and Fayda digital ID enrollment (15M+) creating enabling conditions. However, asset availability hasn't yet translated to usage.
+2026-02-01 21:52:26,782 - __main__ - INFO - 
+6. EVENT TIMING vs OUTCOMES: Despite Telebirr (May 2021), Safaricom (Aug 2022), and M-Pesa (Aug 2023) entries, account ownership stagnated. Suggests events may have substitution effects (shifting users between providers) rather than driving net new inclusion.
+2026-02-01 21:52:26,782 - __main__ - INFO - 
+7. DATA QUALITY LIMITATIONS: Account ownership data relies on 5 survey points over 13 years. Sparse observations limit granular trend analysis. P2P and transaction data are more recent (2023+) but have limited history for forecasting.
+2026-02-01 21:52:26,782 - __main__ - INFO - 
+8. CRITICAL DATA GAPS: Missing data on agent density, merchant acceptance, remittance flows, credit penetration, and regional disparities. These gaps limit ability to model local inclusion drivers and identify underserved areas.
+2026-02-01 21:52:26,782 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:52:26,787 - __main__ - INFO - HYPOTHESES FOR IMPACT MODELING
+2026-02-01 21:52:26,787 - __main__ - INFO - ================================================================================
+2026-02-01 21:52:26,790 - __main__ - INFO - 
+H1: Infrastructure expansion (4G, smartphone) is a necessary but not sufficient condition. Usage adoption requires complementary factors (agent density, merchant acceptance, education).
+2026-02-01 21:52:26,791 - __main__ - INFO - 
+H2: Digital ID (Fayda) enrollment will have delayed but significant impact on account ownership (2024 launch, expected 12-24 month lag for behavioral adoption).
+2026-02-01 21:52:26,793 - __main__ - INFO - 
+H3: Mobile money competition (Telebirr + M-Pesa) drove user substitution rather than net new inclusion, explaining stagnation in 'any account' ownership despite account volume growth.
+2026-02-01 21:52:26,794 - __main__ - INFO - 
+H4: Gender gap is driven by structural barriers (ID access, phone ownership, financial literacy) that will not resolve through infrastructure investment alone. Requires targeted interventions.
+2026-02-01 21:52:26,795 - __main__ - INFO - 
+H5: Regional variation (urban/rural) is larger than national aggregates suggest. Urban centers likely at 60%+ adoption while rural areas lag significantly, masking divergent dynamics.
+2026-02-01 21:52:26,795 - __main__ - INFO - 
+H6: Usage adoption (digital payments) will accelerate post-2025 as smartphone/4G/ID base reaches critical mass. Current 35% digital payment rate has ceiling for growth.
+2026-02-01 21:52:26,797 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:52:26,797 - __main__ - INFO - Task 2 completed successfully at 2026-02-01 21:52:26.797904
+2026-02-01 21:52:26,797 - __main__ - INFO - ================================================================================
+
+2026-02-01 21:52:27,126 - visualization_suite - INFO - Saved ownership plot to output\plots\account_ownership_trend.png
+2026-02-01 21:59:40,075 - __main__ - INFO - ================================================================================
+2026-02-01 21:59:40,075 - __main__ - INFO - TASK 2: Exploratory Data Analysis
+2026-02-01 21:59:40,078 - __main__ - INFO - Execution started: 2026-02-01 21:59:40.075098
+2026-02-01 21:59:40,079 - __main__ - INFO - ================================================================================
+2026-02-01 21:59:40,089 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-01 21:59:40,109 - __main__ - INFO - Loaded enriched data: 45 rows, 34 columns
+2026-02-01 21:59:40,130 - __main__ - INFO - 
+Assessing data completeness
+2026-02-01 21:59:40,135 - __main__ - INFO - Total cells: 1530
+2026-02-01 21:59:40,135 - __main__ - INFO - Missing cells: 650
+2026-02-01 21:59:40,135 - __main__ - INFO - Completeness: 57.52%
+2026-02-01 21:59:40,139 - __main__ - INFO - 
+Assessing confidence levels
+2026-02-01 21:59:40,139 - __main__ - INFO - 
+Confidence Distribution:
+confidence
+high      41
+medium     4
+Name: count, dtype: int64
+2026-02-01 21:59:40,139 - __main__ - INFO - 
+Identifying data gaps
+2026-02-01 21:59:40,154 - __main__ - INFO - 
+Indicators with missing recent data: 0
+2026-02-01 21:59:40,164 - __main__ - INFO - 
+============================================================
+2026-02-01 21:59:40,164 - __main__ - INFO - ACCOUNT OWNERSHIP ANALYSIS
+2026-02-01 21:59:40,164 - __main__ - INFO - ============================================================
+2026-02-01 21:59:40,164 - __main__ - INFO - 
+Account Ownership Trajectory (2011-2024):
+2026-02-01 21:59:40,164 - __main__ - INFO -   observation_date  value_numeric  gender
+0       2014-12-31           22.0     all
+1       2017-12-31           35.0     all
+2       2021-12-31           46.0     all
+3       2021-12-31           56.0    male
+4       2021-12-31           36.0  female
+5       2024-11-29           49.0     all
+2026-02-01 21:59:40,177 - __main__ - INFO - 
+Growth Rates:
+2026-02-01 21:59:40,180 - __main__ - INFO -   observation_date  value_numeric  growth_pp  growth_pct
+0       2014-12-31           22.0        NaN         NaN
+1       2017-12-31           35.0       13.0   59.090909
+2       2021-12-31           46.0       11.0   31.428571
+5       2024-11-29           49.0        3.0    6.521739
+2026-02-01 21:59:40,181 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,181 - __main__ - INFO - GENDER GAP ANALYSIS
+2026-02-01 21:59:40,181 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,181 - __main__ - INFO - 2021: Male=56.0%, Female=36.0%, Gap=20.0pp
+2026-02-01 21:59:40,181 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,181 - __main__ - INFO - MOBILE MONEY ACCOUNT ANALYSIS
+2026-02-01 21:59:40,193 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,196 - __main__ - INFO - 
+Mobile Money Account Rate (2021-2024):
+2026-02-01 21:59:40,198 - __main__ - INFO -   observation_date  value_numeric
+6       2021-12-31           4.70
+7       2024-11-29           9.45
+2026-02-01 21:59:40,198 - __main__ - INFO - 
+Growth (2021-2024): 4.75pp (101.1%)
+2026-02-01 21:59:40,247 - __main__ - INFO - 
+============================================================
+2026-02-01 21:59:40,247 - __main__ - INFO - DIGITAL PAYMENT ADOPTION ANALYSIS
+2026-02-01 21:59:40,247 - __main__ - INFO - ============================================================
+2026-02-01 21:59:40,247 - __main__ - INFO - P2P Transaction Count: 128300000.00 (as of 2025-07-07)
+2026-02-01 21:59:40,262 - __main__ - INFO - Telebirr Users: 54840000.00 (as of 2025-06-30)
+2026-02-01 21:59:40,264 - __main__ - INFO - M-Pesa Users: 10800000.00 (as of 2024-12-31)
+2026-02-01 21:59:40,264 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,264 - __main__ - INFO - P2P TRANSACTION ANALYSIS
+2026-02-01 21:59:40,264 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,264 - __main__ - INFO - 
+P2P Transaction Volume:
+2026-02-01 21:59:40,264 - __main__ - INFO -    observation_date  value_numeric
+14       2024-07-07     49700000.0
+15       2025-07-07    128300000.0
+2026-02-01 21:59:40,264 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,264 - __main__ - INFO - REGISTERED vs ACTIVE USAGE GAP
+2026-02-01 21:59:40,277 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,283 - __main__ - INFO - 
+============================================================
+2026-02-01 21:59:40,293 - __main__ - INFO - INFRASTRUCTURE AND ENABLERS ANALYSIS
+2026-02-01 21:59:40,293 - __main__ - INFO - ============================================================
+2026-02-01 21:59:40,296 - __main__ - INFO - 4G Coverage: 75.00 % (as of 2025-12-31)
+2026-02-01 21:59:40,296 - __main__ - INFO - Mobile Penetration: 61.40 % (as of 2025-12-31)
+2026-02-01 21:59:40,304 - __main__ - INFO - Smartphone Penetration: 28.50 % (as of 2025-12-31)
+2026-02-01 21:59:40,307 - __main__ - INFO - Fayda Digital ID: 15000000.00 people (as of 2025-05-15)
+2026-02-01 21:59:40,308 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,309 - __main__ - INFO - POTENTIAL LEADING INDICATORS
+2026-02-01 21:59:40,310 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,312 - __main__ - INFO -   • Smartphone Penetration (ACC_SMARTPHONE)
+2026-02-01 21:59:40,312 - __main__ - INFO -   • 4G Population Coverage (ACC_4G_COV)
+2026-02-01 21:59:40,313 - __main__ - INFO -   • Fayda Digital ID Enrollment (ACC_FAYDA)
+2026-02-01 21:59:40,315 - __main__ - INFO -   • Mobile Internet Penetration (implied by mobile + data)
+2026-02-01 21:59:40,316 - __main__ - INFO -   • Agent Network Density (from bank sources)
+2026-02-01 21:59:40,317 - __main__ - INFO -   • Data Affordability (ITU data)
+2026-02-01 21:59:40,318 - __main__ - INFO -   • Urbanization Rate
+2026-02-01 21:59:40,329 - __main__ - INFO - 
+============================================================
+2026-02-01 21:59:40,331 - __main__ - INFO - EVENT TIMELINE ANALYSIS
+2026-02-01 21:59:40,332 - __main__ - INFO - ============================================================
+2026-02-01 21:59:40,337 - __main__ - INFO - 
+Total Events Cataloged: 10
+2026-02-01 21:59:40,339 - __main__ - INFO - 
+Event Distribution by Category:
+2026-02-01 21:59:40,340 - __main__ - INFO - category
+product_launch    2
+policy            2
+infrastructure    2
+market_entry      1
+milestone         1
+partnership       1
+pricing           1
+Name: count, dtype: int64
+2026-02-01 21:59:40,343 - __main__ - INFO - 
+Event Timeline (2021-2025):
+2026-02-01 21:59:40,344 - __main__ - INFO -   2021-05-17: product_launch - Telebirr Launch
+2026-02-01 21:59:40,346 - __main__ - INFO -   2021-09-01: policy - NFIS-II Strategy Launch
+2026-02-01 21:59:40,347 - __main__ - INFO -   2022-08-01: market_entry - Safaricom Ethiopia Commercial Launch
+2026-02-01 21:59:40,348 - __main__ - INFO -   2023-08-01: product_launch - M-Pesa Ethiopia Launch
+2026-02-01 21:59:40,349 - __main__ - INFO -   2024-01-01: infrastructure - Fayda Digital ID Program Rollout
+2026-02-01 21:59:40,350 - __main__ - INFO -   2024-07-29: policy - Foreign Exchange Liberalization
+2026-02-01 21:59:40,353 - __main__ - INFO -   2024-10-01: milestone - P2P Transaction Count Surpasses ATM
+2026-02-01 21:59:40,356 - __main__ - INFO -   2025-10-27: partnership - M-Pesa EthSwitch Integration
+2026-02-01 21:59:40,358 - __main__ - INFO -   2025-12-15: pricing - Safaricom Ethiopia Price Increase
+2026-02-01 21:59:40,359 - __main__ - INFO -   2025-12-18: infrastructure - EthioPay Instant Payment System Launch
+2026-02-01 21:59:40,361 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,362 - __main__ - INFO - KEY EVENTS AND THEIR IMPACTS
+2026-02-01 21:59:40,363 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,370 - __main__ - INFO - 
+Key Events Identified:
+2026-02-01 21:59:40,371 - __main__ - INFO -   • Telebirr Launch: 2021-05
+2026-02-01 21:59:40,373 - __main__ - INFO -   • Safaricom Market Entry: 2022-08
+2026-02-01 21:59:40,375 - __main__ - INFO -   • M-Pesa Launch: 2023-08
+2026-02-01 21:59:40,375 - __main__ - INFO -   • Fayda Digital ID Expansion: 2024-01
+2026-02-01 21:59:40,377 - __main__ - INFO -   • FX Reform: 2024-07
+2026-02-01 21:59:40,597 - __main__ - INFO - 
+============================================================
+2026-02-01 21:59:40,597 - __main__ - INFO - IMPACT LINK RELATIONSHIPS
+2026-02-01 21:59:40,597 - __main__ - INFO - ============================================================
+2026-02-01 21:59:40,597 - __main__ - INFO - 
+Total Impact Relationships: 14
+2026-02-01 21:59:40,597 - __main__ - INFO - 
+Impact Direction Distribution:
+impact_direction
+increase    12
+decrease     2
+Name: count, dtype: int64
+2026-02-01 21:59:40,597 - __main__ - INFO - 
+Top Impact Magnitudes (Mapped):
+2026-02-01 21:59:40,609 - __main__ - INFO -   parent_id  indicator_code impact_magnitude  lag_months
+0  EVT_0001             NaN             high          12
+1  EVT_0001             NaN             high           3
+2  EVT_0001             NaN             high           6
+5  EVT_0003             NaN             high           3
+9  EVT_0005             NaN             high           3
+2026-02-01 21:59:40,629 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,633 - __main__ - INFO - ACCESS DRIVERS
+2026-02-01 21:59:40,633 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,633 - __main__ - INFO - 
+Factors affecting Account Ownership:
+2026-02-01 21:59:40,658 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 21:59:40,658 - __main__ - INFO - USAGE DRIVERS
+2026-02-01 21:59:40,658 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 21:59:40,666 - __main__ - INFO - 
+Factors affecting Digital Payment Usage:
+2026-02-01 21:59:40,675 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:59:40,675 - __main__ - INFO - KEY INSIGHTS FROM EDA
+2026-02-01 21:59:40,675 - __main__ - INFO - ================================================================================
+2026-02-01 21:59:40,680 - __main__ - INFO - 
+1. STAGNATION PARADOX: Account ownership grew only +3pp (46% to 49%) from 2021-2024, despite mobile money accounts more than doubling from 4.7% to 9.45%. This suggests existing bank accounts dominate the ownership metric and mobile money is not significantly increasing 'any account' ownership.
+2026-02-01 21:59:40,682 - __main__ - INFO - 
+2. PERSISTENT GENDER GAP: A 20pp gender gap exists (56% male vs 36% female ownership in 2021), unchanged or widened despite policy attention. Gender-specific barriers (ID access, phone ownership, cultural factors) persist despite infrastructure improvements.
+2026-02-01 21:59:40,682 - __main__ - INFO - 
+3. REGISTERED vs ACTIVE GAP: Mobile money accounts (9.45%) exceed digital payment adoption (~35% for broader payments), suggesting many registered accounts are inactive. High registration but low engagement indicates onboarding without sustained use.
+2026-02-01 21:59:40,682 - __main__ - INFO - 
+4. P2P DOMINANCE IN ETHIOPIA: Unlike global norms, digital payments in Ethiopia are heavily P2P-driven (for goods/services, not just transfers). This market nuance requires adapted baselines and program design assumptions.
+2026-02-01 21:59:40,682 - __main__ - INFO - 
+5. INFRASTRUCTURE INVESTMENT SCALING: 4G coverage doubled (37.5% to 70.8% in 2025), smartphone penetration rising (~28.5% in 2025), and Fayda digital ID enrollment (15M+) creating enabling conditions. However, asset availability hasn't yet translated to usage.
+2026-02-01 21:59:40,687 - __main__ - INFO - 
+6. EVENT TIMING vs OUTCOMES: Despite Telebirr (May 2021), Safaricom (Aug 2022), and M-Pesa (Aug 2023) entries, account ownership stagnated. Suggests events may have substitution effects (shifting users between providers) rather than driving net new inclusion.
+2026-02-01 21:59:40,688 - __main__ - INFO - 
+7. DATA QUALITY LIMITATIONS: Account ownership data relies on 5 survey points over 13 years. Sparse observations limit granular trend analysis. P2P and transaction data are more recent (2023+) but have limited history for forecasting.
+2026-02-01 21:59:40,688 - __main__ - INFO - 
+8. CRITICAL DATA GAPS: Missing data on agent density, merchant acceptance, remittance flows, credit penetration, and regional disparities. These gaps limit ability to model local inclusion drivers and identify underserved areas.
+2026-02-01 21:59:40,691 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:59:40,691 - __main__ - INFO - HYPOTHESES FOR IMPACT MODELING
+2026-02-01 21:59:40,691 - __main__ - INFO - ================================================================================
+2026-02-01 21:59:40,691 - __main__ - INFO - 
+H1: Infrastructure expansion (4G, smartphone) is a necessary but not sufficient condition. Usage adoption requires complementary factors (agent density, merchant acceptance, education).
+2026-02-01 21:59:40,696 - __main__ - INFO - 
+H2: Digital ID (Fayda) enrollment will have delayed but significant impact on account ownership (2024 launch, expected 12-24 month lag for behavioral adoption).
+2026-02-01 21:59:40,699 - __main__ - INFO - 
+H3: Mobile money competition (Telebirr + M-Pesa) drove user substitution rather than net new inclusion, explaining stagnation in 'any account' ownership despite account volume growth.
+2026-02-01 21:59:40,700 - __main__ - INFO - 
+H4: Gender gap is driven by structural barriers (ID access, phone ownership, financial literacy) that will not resolve through infrastructure investment alone. Requires targeted interventions.
+2026-02-01 21:59:40,700 - __main__ - INFO - 
+H5: Regional variation (urban/rural) is larger than national aggregates suggest. Urban centers likely at 60%+ adoption while rural areas lag significantly, masking divergent dynamics.
+2026-02-01 21:59:40,700 - __main__ - INFO - 
+H6: Usage adoption (digital payments) will accelerate post-2025 as smartphone/4G/ID base reaches critical mass. Current 35% digital payment rate has ceiling for growth.
+2026-02-01 21:59:40,700 - __main__ - INFO - 
+================================================================================
+2026-02-01 21:59:40,700 - __main__ - INFO - Task 2 completed successfully at 2026-02-01 21:59:40.700218
+2026-02-01 21:59:40,700 - __main__ - INFO - ================================================================================
+
+2026-02-01 21:59:41,048 - visualization_suite - INFO - Saved ownership plot to output\plots\account_ownership_trend.png
+2026-02-01 22:02:24,319 - __main__ - INFO - ================================================================================
+2026-02-01 22:02:24,320 - __main__ - INFO - TASK 2: Exploratory Data Analysis
+2026-02-01 22:02:24,321 - __main__ - INFO - Execution started: 2026-02-01 22:02:24.321389
+2026-02-01 22:02:24,323 - __main__ - INFO - ================================================================================
+2026-02-01 22:02:24,333 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-01 22:02:24,358 - __main__ - INFO - Loaded enriched data: 45 rows, 34 columns
+2026-02-01 22:02:24,386 - __main__ - INFO - 
+Assessing data completeness
+2026-02-01 22:02:24,392 - __main__ - INFO - Total cells: 1530
+2026-02-01 22:02:24,392 - __main__ - INFO - Missing cells: 650
+2026-02-01 22:02:24,392 - __main__ - INFO - Completeness: 57.52%
+2026-02-01 22:02:24,392 - __main__ - INFO - 
+Assessing confidence levels
+2026-02-01 22:02:24,397 - __main__ - INFO - 
+Confidence Distribution:
+confidence
+high      41
+medium     4
+Name: count, dtype: int64
+2026-02-01 22:02:24,397 - __main__ - INFO - 
+Identifying data gaps
+2026-02-01 22:02:24,409 - __main__ - INFO - 
+Indicators with missing recent data: 0
+2026-02-01 22:02:24,425 - __main__ - INFO - 
+============================================================
+2026-02-01 22:02:24,430 - __main__ - INFO - ACCOUNT OWNERSHIP ANALYSIS
+2026-02-01 22:02:24,432 - __main__ - INFO - ============================================================
+2026-02-01 22:02:24,437 - __main__ - INFO - 
+Account Ownership Trajectory (2011-2024):
+2026-02-01 22:02:24,445 - __main__ - INFO -   observation_date  value_numeric  gender
+0       2014-12-31           22.0     all
+1       2017-12-31           35.0     all
+2       2021-12-31           46.0     all
+3       2021-12-31           56.0    male
+4       2021-12-31           36.0  female
+5       2024-11-29           49.0     all
+2026-02-01 22:02:24,451 - __main__ - INFO - 
+Growth Rates:
+2026-02-01 22:02:24,453 - __main__ - INFO -   observation_date  value_numeric  growth_pp  growth_pct
+0       2014-12-31           22.0        NaN         NaN
+1       2017-12-31           35.0       13.0   59.090909
+2       2021-12-31           46.0       11.0   31.428571
+5       2024-11-29           49.0        3.0    6.521739
+2026-02-01 22:02:24,453 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,453 - __main__ - INFO - GENDER GAP ANALYSIS
+2026-02-01 22:02:24,458 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,462 - __main__ - INFO - 2021: Male=56.0%, Female=36.0%, Gap=20.0pp
+2026-02-01 22:02:24,462 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,474 - __main__ - INFO - MOBILE MONEY ACCOUNT ANALYSIS
+2026-02-01 22:02:24,476 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,480 - __main__ - INFO - 
+Mobile Money Account Rate (2021-2024):
+2026-02-01 22:02:24,480 - __main__ - INFO -   observation_date  value_numeric
+6       2021-12-31           4.70
+7       2024-11-29           9.45
+2026-02-01 22:02:24,480 - __main__ - INFO - 
+Growth (2021-2024): 4.75pp (101.1%)
+2026-02-01 22:02:24,494 - __main__ - INFO - 
+============================================================
+2026-02-01 22:02:24,494 - __main__ - INFO - DIGITAL PAYMENT ADOPTION ANALYSIS
+2026-02-01 22:02:24,494 - __main__ - INFO - ============================================================
+2026-02-01 22:02:24,501 - __main__ - INFO - P2P Transaction Count: 128300000.00 (as of 2025-07-07)
+2026-02-01 22:02:24,501 - __main__ - INFO - Telebirr Users: 54840000.00 (as of 2025-06-30)
+2026-02-01 22:02:24,506 - __main__ - INFO - M-Pesa Users: 10800000.00 (as of 2024-12-31)
+2026-02-01 22:02:24,508 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,510 - __main__ - INFO - P2P TRANSACTION ANALYSIS
+2026-02-01 22:02:24,510 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,514 - __main__ - INFO - 
+P2P Transaction Volume:
+2026-02-01 22:02:24,516 - __main__ - INFO -    observation_date  value_numeric
+14       2024-07-07     49700000.0
+15       2025-07-07    128300000.0
+2026-02-01 22:02:24,516 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,516 - __main__ - INFO - REGISTERED vs ACTIVE USAGE GAP
+2026-02-01 22:02:24,516 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,546 - __main__ - INFO - 
+============================================================
+2026-02-01 22:02:24,546 - __main__ - INFO - INFRASTRUCTURE AND ENABLERS ANALYSIS
+2026-02-01 22:02:24,548 - __main__ - INFO - ============================================================
+2026-02-01 22:02:24,548 - __main__ - INFO - 4G Coverage: 75.00 % (as of 2025-12-31)
+2026-02-01 22:02:24,558 - __main__ - INFO - Mobile Penetration: 61.40 % (as of 2025-12-31)
+2026-02-01 22:02:24,559 - __main__ - INFO - Smartphone Penetration: 28.50 % (as of 2025-12-31)
+2026-02-01 22:02:24,559 - __main__ - INFO - Fayda Digital ID: 15000000.00 people (as of 2025-05-15)
+2026-02-01 22:02:24,559 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,559 - __main__ - INFO - POTENTIAL LEADING INDICATORS
+2026-02-01 22:02:24,559 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,559 - __main__ - INFO -   • Smartphone Penetration (ACC_SMARTPHONE)
+2026-02-01 22:02:24,570 - __main__ - INFO -   • 4G Population Coverage (ACC_4G_COV)
+2026-02-01 22:02:24,570 - __main__ - INFO -   • Fayda Digital ID Enrollment (ACC_FAYDA)
+2026-02-01 22:02:24,570 - __main__ - INFO -   • Mobile Internet Penetration (implied by mobile + data)
+2026-02-01 22:02:24,570 - __main__ - INFO -   • Agent Network Density (from bank sources)
+2026-02-01 22:02:24,574 - __main__ - INFO -   • Data Affordability (ITU data)
+2026-02-01 22:02:24,576 - __main__ - INFO -   • Urbanization Rate
+2026-02-01 22:02:24,586 - __main__ - INFO - 
+============================================================
+2026-02-01 22:02:24,586 - __main__ - INFO - EVENT TIMELINE ANALYSIS
+2026-02-01 22:02:24,591 - __main__ - INFO - ============================================================
+2026-02-01 22:02:24,597 - __main__ - INFO - 
+Total Events Cataloged: 10
+2026-02-01 22:02:24,597 - __main__ - INFO - 
+Event Distribution by Category:
+2026-02-01 22:02:24,597 - __main__ - INFO - category
+product_launch    2
+policy            2
+infrastructure    2
+market_entry      1
+milestone         1
+partnership       1
+pricing           1
+Name: count, dtype: int64
+2026-02-01 22:02:24,602 - __main__ - INFO - 
+Event Timeline (2021-2025):
+2026-02-01 22:02:24,602 - __main__ - INFO -   2021-05-17: product_launch - Telebirr Launch
+2026-02-01 22:02:24,602 - __main__ - INFO -   2021-09-01: policy - NFIS-II Strategy Launch
+2026-02-01 22:02:24,608 - __main__ - INFO -   2022-08-01: market_entry - Safaricom Ethiopia Commercial Launch
+2026-02-01 22:02:24,609 - __main__ - INFO -   2023-08-01: product_launch - M-Pesa Ethiopia Launch
+2026-02-01 22:02:24,609 - __main__ - INFO -   2024-01-01: infrastructure - Fayda Digital ID Program Rollout
+2026-02-01 22:02:24,609 - __main__ - INFO -   2024-07-29: policy - Foreign Exchange Liberalization
+2026-02-01 22:02:24,609 - __main__ - INFO -   2024-10-01: milestone - P2P Transaction Count Surpasses ATM
+2026-02-01 22:02:24,609 - __main__ - INFO -   2025-10-27: partnership - M-Pesa EthSwitch Integration
+2026-02-01 22:02:24,609 - __main__ - INFO -   2025-12-15: pricing - Safaricom Ethiopia Price Increase
+2026-02-01 22:02:24,609 - __main__ - INFO -   2025-12-18: infrastructure - EthioPay Instant Payment System Launch
+2026-02-01 22:02:24,609 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,618 - __main__ - INFO - KEY EVENTS AND THEIR IMPACTS
+2026-02-01 22:02:24,618 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,622 - __main__ - INFO - 
+Key Events Identified:
+2026-02-01 22:02:24,624 - __main__ - INFO -   • Telebirr Launch: 2021-05
+2026-02-01 22:02:24,625 - __main__ - INFO -   • Safaricom Market Entry: 2022-08
+2026-02-01 22:02:24,625 - __main__ - INFO -   • M-Pesa Launch: 2023-08
+2026-02-01 22:02:24,625 - __main__ - INFO -   • Fayda Digital ID Expansion: 2024-01
+2026-02-01 22:02:24,625 - __main__ - INFO -   • FX Reform: 2024-07
+2026-02-01 22:02:24,891 - __main__ - INFO - 
+============================================================
+2026-02-01 22:02:24,891 - __main__ - INFO - IMPACT LINK RELATIONSHIPS
+2026-02-01 22:02:24,898 - __main__ - INFO - ============================================================
+2026-02-01 22:02:24,898 - __main__ - INFO - 
+Total Impact Relationships: 14
+2026-02-01 22:02:24,898 - __main__ - INFO - 
+Impact Direction Distribution:
+impact_direction
+increase    12
+decrease     2
+Name: count, dtype: int64
+2026-02-01 22:02:24,898 - __main__ - INFO - 
+Top Impact Magnitudes (Mapped):
+2026-02-01 22:02:24,908 - __main__ - INFO -   parent_id  indicator_code impact_magnitude  lag_months
+0  EVT_0001             NaN             high          12
+1  EVT_0001             NaN             high           3
+2  EVT_0001             NaN             high           6
+5  EVT_0003             NaN             high           3
+9  EVT_0005             NaN             high           3
+2026-02-01 22:02:24,924 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,926 - __main__ - INFO - ACCESS DRIVERS
+2026-02-01 22:02:24,926 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,926 - __main__ - INFO - 
+Factors affecting Account Ownership:
+2026-02-01 22:02:24,941 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-01 22:02:24,941 - __main__ - INFO - USAGE DRIVERS
+2026-02-01 22:02:24,941 - __main__ - INFO - ------------------------------------------------------------
+2026-02-01 22:02:24,953 - __main__ - INFO - 
+Factors affecting Digital Payment Usage:
+2026-02-01 22:02:24,969 - __main__ - INFO - 
+================================================================================
+2026-02-01 22:02:24,971 - __main__ - INFO - KEY INSIGHTS FROM EDA
+2026-02-01 22:02:24,971 - __main__ - INFO - ================================================================================
+2026-02-01 22:02:24,974 - __main__ - INFO - 
+1. STAGNATION PARADOX: Account ownership grew only +3pp (46% to 49%) from 2021-2024, despite mobile money accounts more than doubling from 4.7% to 9.45%. This suggests existing bank accounts dominate the ownership metric and mobile money is not significantly increasing 'any account' ownership.
+2026-02-01 22:02:24,974 - __main__ - INFO - 
+2. PERSISTENT GENDER GAP: A 20pp gender gap exists (56% male vs 36% female ownership in 2021), unchanged or widened despite policy attention. Gender-specific barriers (ID access, phone ownership, cultural factors) persist despite infrastructure improvements.
+2026-02-01 22:02:24,974 - __main__ - INFO - 
+3. REGISTERED vs ACTIVE GAP: Mobile money accounts (9.45%) exceed digital payment adoption (~35% for broader payments), suggesting many registered accounts are inactive. High registration but low engagement indicates onboarding without sustained use.
+2026-02-01 22:02:24,974 - __main__ - INFO - 
+4. P2P DOMINANCE IN ETHIOPIA: Unlike global norms, digital payments in Ethiopia are heavily P2P-driven (for goods/services, not just transfers). This market nuance requires adapted baselines and program design assumptions.
+2026-02-01 22:02:24,980 - __main__ - INFO - 
+5. INFRASTRUCTURE INVESTMENT SCALING: 4G coverage doubled (37.5% to 70.8% in 2025), smartphone penetration rising (~28.5% in 2025), and Fayda digital ID enrollment (15M+) creating enabling conditions. However, asset availability hasn't yet translated to usage.
+2026-02-01 22:02:24,982 - __main__ - INFO - 
+6. EVENT TIMING vs OUTCOMES: Despite Telebirr (May 2021), Safaricom (Aug 2022), and M-Pesa (Aug 2023) entries, account ownership stagnated. Suggests events may have substitution effects (shifting users between providers) rather than driving net new inclusion.
+2026-02-01 22:02:24,982 - __main__ - INFO - 
+7. DATA QUALITY LIMITATIONS: Account ownership data relies on 5 survey points over 13 years. Sparse observations limit granular trend analysis. P2P and transaction data are more recent (2023+) but have limited history for forecasting.
+2026-02-01 22:02:24,982 - __main__ - INFO - 
+8. CRITICAL DATA GAPS: Missing data on agent density, merchant acceptance, remittance flows, credit penetration, and regional disparities. These gaps limit ability to model local inclusion drivers and identify underserved areas.
+2026-02-01 22:02:24,984 - __main__ - INFO - 
+================================================================================
+2026-02-01 22:02:24,985 - __main__ - INFO - HYPOTHESES FOR IMPACT MODELING
+2026-02-01 22:02:24,985 - __main__ - INFO - ================================================================================
+2026-02-01 22:02:24,985 - __main__ - INFO - 
+H1: Infrastructure expansion (4G, smartphone) is a necessary but not sufficient condition. Usage adoption requires complementary factors (agent density, merchant acceptance, education).
+2026-02-01 22:02:24,985 - __main__ - INFO - 
+H2: Digital ID (Fayda) enrollment will have delayed but significant impact on account ownership (2024 launch, expected 12-24 month lag for behavioral adoption).
+2026-02-01 22:02:24,985 - __main__ - INFO - 
+H3: Mobile money competition (Telebirr + M-Pesa) drove user substitution rather than net new inclusion, explaining stagnation in 'any account' ownership despite account volume growth.
+2026-02-01 22:02:24,993 - __main__ - INFO - 
+H4: Gender gap is driven by structural barriers (ID access, phone ownership, financial literacy) that will not resolve through infrastructure investment alone. Requires targeted interventions.
+2026-02-01 22:02:24,995 - __main__ - INFO - 
+H5: Regional variation (urban/rural) is larger than national aggregates suggest. Urban centers likely at 60%+ adoption while rural areas lag significantly, masking divergent dynamics.
+2026-02-01 22:02:24,998 - __main__ - INFO - 
+H6: Usage adoption (digital payments) will accelerate post-2025 as smartphone/4G/ID base reaches critical mass. Current 35% digital payment rate has ceiling for growth.
+2026-02-01 22:02:24,999 - __main__ - INFO - 
+================================================================================
+2026-02-01 22:02:25,001 - __main__ - INFO - Task 2 completed successfully at 2026-02-01 22:02:25.001690
+2026-02-01 22:02:25,001 - __main__ - INFO - ================================================================================
+
+2026-02-01 22:02:25,318 - visualization_suite - INFO - Saved ownership plot to output\plots\account_ownership_trend.png
