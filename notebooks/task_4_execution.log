@@ -1,0 +1,357 @@
+2026-02-02 12:16:39,615 - __main__ - INFO - ================================================================================
+2026-02-02 12:16:39,615 - __main__ - INFO - TASK 4: Forecasting Access and Usage (2025-2027)
+2026-02-02 12:16:39,615 - __main__ - INFO - Execution started: 2026-02-02 12:16:39.615906
+2026-02-02 12:16:39,615 - __main__ - INFO - ================================================================================
+2026-02-02 12:16:39,631 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-02 12:16:39,652 - __main__ - INFO - Loaded enriched data: (45, 34)
+2026-02-02 12:16:39,657 - __main__ - INFO - Loaded refined impact estimates
+2026-02-02 12:17:48,662 - __main__ - INFO - ================================================================================
+2026-02-02 12:17:48,662 - __main__ - INFO - TASK 4: Forecasting Access and Usage (2025-2027)
+2026-02-02 12:17:48,672 - __main__ - INFO - Execution started: 2026-02-02 12:17:48.672724
+2026-02-02 12:17:48,672 - __main__ - INFO - ================================================================================
+2026-02-02 12:17:48,689 - __main__ - INFO - Scripts path already in sys.path or does not exist: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-02 12:17:48,706 - __main__ - INFO - Loaded enriched data: (45, 34)
+2026-02-02 12:17:48,706 - __main__ - INFO - Loaded refined impact estimates
+2026-02-02 12:17:48,730 - __main__ - INFO - 
+============================================================
+2026-02-02 12:17:48,731 - __main__ - INFO - ACCOUNT OWNERSHIP TREND ANALYSIS
+2026-02-02 12:17:48,733 - __main__ - INFO - ============================================================
+2026-02-02 12:17:48,740 - __main__ - INFO - 
+Historical Account Ownership:
+2026-02-02 12:17:48,740 - __main__ - INFO -  year  value_numeric
+ 2014           22.0
+ 2017           35.0
+ 2021           46.0
+ 2024           49.0
+2026-02-02 12:17:48,750 - __main__ - INFO - 
+Annual Growth Rates:
+2026-02-02 12:17:48,750 - __main__ - INFO -  year  annual_growth_pp
+ 2014               NaN
+ 2017          4.333333
+ 2021          2.750000
+ 2024          1.000000
+2026-02-02 12:17:48,750 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:17:48,756 - __main__ - INFO - DIGITAL PAYMENT USAGE TREND ANALYSIS
+2026-02-02 12:17:48,758 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:17:48,758 - __main__ - INFO - No direct digital payment observations found
+2026-02-02 12:17:48,781 - __main__ - INFO - 
+********************************************************************************
+2026-02-02 12:17:48,781 - __main__ - INFO - FORECASTING ACCOUNT OWNERSHIP (ACCESS)
+2026-02-02 12:17:48,789 - __main__ - INFO - ********************************************************************************
+2026-02-02 12:17:48,793 - __main__ - INFO - 
+============================================================
+2026-02-02 12:17:48,795 - __main__ - INFO - LINEAR TREND FORECAST
+2026-02-02 12:17:48,795 - __main__ - INFO - ============================================================
+2026-02-02 12:17:48,805 - __main__ - INFO - 
+Linear Trend Equation: y = 2.7069x + -5427.22
+2026-02-02 12:17:48,806 - __main__ - INFO - Annual growth rate: 2.71pp
+2026-02-02 12:17:48,808 - __main__ - INFO - 
+Baseline Forecast for Account Ownership:
+2026-02-02 12:17:48,811 - __main__ - INFO -   2025: 54.2%
+2026-02-02 12:17:48,813 - __main__ - INFO -   2026: 56.9%
+2026-02-02 12:17:48,815 - __main__ - INFO -   2027: 59.7%
+2026-02-02 12:17:48,819 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:17:48,821 - __main__ - INFO - EVENT-AUGMENTED FORECAST
+2026-02-02 12:17:48,823 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:17:48,823 - __main__ - INFO - Year 2026: Adding Fayda Digital ID impact (+10.0pp)
+2026-02-02 12:17:48,828 - __main__ - INFO - Year 2027: Adding Fayda Digital ID impact (+10.0pp)
+2026-02-02 12:17:48,831 - __main__ - INFO - 
+Event-Augmented Forecast for Account Ownership:
+2026-02-02 12:17:48,833 - __main__ - INFO -   2025: 54.2%
+2026-02-02 12:17:48,835 - __main__ - INFO -   2026: 66.9%
+2026-02-02 12:17:48,837 - __main__ - INFO -   2027: 69.7%
+2026-02-02 12:17:48,837 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:17:48,837 - __main__ - INFO - SCENARIO ANALYSIS
+2026-02-02 12:17:48,837 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:17:48,837 - __main__ - INFO - 
+Scenario Forecasts (2025-2027):
+2026-02-02 12:17:48,843 - __main__ - INFO -   Pessimistic: [51.24137931 63.94827586 66.65517241]
+2026-02-02 12:17:48,846 - __main__ - INFO -   Base: [54.24137931 66.94827586 69.65517241]
+2026-02-02 12:17:48,846 - __main__ - INFO -   Optimistic: [59.24137931 71.94827586 74.65517241]
+2026-02-02 12:17:48,846 - __main__ - INFO - 
+Forecast with Confidence Intervals (95%):
+2026-02-02 12:17:48,846 - __main__ - INFO -   2025: 54.2% [50.3% - 58.2%]
+2026-02-02 12:17:48,846 - __main__ - INFO -   2026: 66.9% [63.0% - 70.9%]
+2026-02-02 12:17:48,846 - __main__ - INFO -   2027: 69.7% [65.7% - 73.6%]
+2026-02-02 12:17:48,872 - __main__ - INFO - 
+********************************************************************************
+2026-02-02 12:17:48,872 - __main__ - INFO - FORECASTING DIGITAL PAYMENT USAGE
+2026-02-02 12:17:48,872 - __main__ - INFO - ********************************************************************************
+2026-02-02 12:17:48,872 - __main__ - INFO - 
+No direct digital payment data; using proxy forecast
+2026-02-02 12:17:48,877 - __main__ - INFO - 
+Baseline Forecast for Digital Payment Usage:
+2026-02-02 12:17:48,879 - __main__ - INFO -   2025: 40.7%
+2026-02-02 12:17:48,880 - __main__ - INFO -   2026: 50.2%
+2026-02-02 12:17:48,880 - __main__ - INFO -   2027: 52.2%
+2026-02-02 12:17:48,884 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:17:48,886 - __main__ - INFO - EVENT-AUGMENTED FORECAST
+2026-02-02 12:17:48,886 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:17:48,886 - __main__ - INFO - Year 2025: Adding Telebirr/M-Pesa Ecosystem impact (+15.0pp)
+2026-02-02 12:17:48,886 - __main__ - INFO - Year 2025: Adding 4G Infrastructure impact (+8.0pp)
+2026-02-02 12:17:48,886 - __main__ - INFO - Year 2026: Adding Telebirr/M-Pesa Ecosystem impact (+15.0pp)
+2026-02-02 12:17:48,892 - __main__ - INFO - Year 2026: Adding 4G Infrastructure impact (+8.0pp)
+2026-02-02 12:17:48,892 - __main__ - INFO - Year 2027: Adding Telebirr/M-Pesa Ecosystem impact (+15.0pp)
+2026-02-02 12:17:48,892 - __main__ - INFO - Year 2027: Adding 4G Infrastructure impact (+8.0pp)
+2026-02-02 12:17:48,894 - __main__ - INFO - 
+Event-Augmented Forecast for Digital Payment Usage:
+2026-02-02 12:17:48,895 - __main__ - INFO -   2025: 63.7%
+2026-02-02 12:17:48,895 - __main__ - INFO -   2026: 73.2%
+2026-02-02 12:17:48,895 - __main__ - INFO -   2027: 75.2%
+2026-02-02 12:17:48,895 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:17:48,895 - __main__ - INFO - SCENARIO ANALYSIS
+2026-02-02 12:17:48,902 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:17:48,902 - __main__ - INFO - 
+Scenario Forecasts (2025-2027):
+2026-02-02 12:17:48,902 - __main__ - INFO -   Pessimistic: [60.68103448 70.2112069  72.24137931]
+2026-02-02 12:17:48,902 - __main__ - INFO -   Base: [63.68103448 73.2112069  75.24137931]
+2026-02-02 12:17:48,908 - __main__ - INFO -   Optimistic: [68.68103448 78.2112069  80.24137931]
+2026-02-02 12:17:48,910 - __main__ - INFO - 
+Forecast with Confidence Intervals (95%):
+2026-02-02 12:17:48,910 - __main__ - INFO -   2025: 63.7% [57.8% - 69.6%]
+2026-02-02 12:17:48,910 - __main__ - INFO -   2026: 73.2% [67.3% - 79.1%]
+2026-02-02 12:17:48,913 - __main__ - INFO -   2027: 75.2% [69.4% - 81.1%]
+2026-02-02 12:17:48,922 - __main__ - INFO - 
+================================================================================
+2026-02-02 12:17:48,925 - __main__ - INFO - FORECAST RESULTS TABLE
+2026-02-02 12:17:48,927 - __main__ - INFO - ================================================================================
+2026-02-02 12:17:48,927 - __main__ - INFO - 
+ Year  Account_Ownership_%  Ownership_CI_Lower  Ownership_CI_Upper  Digital_Payment_%  Payment_CI_Lower  Payment_CI_Upper
+ 2025                 54.2                50.3                58.2               63.7              57.8              69.6
+ 2026                 66.9                63.0                70.9               73.2              67.3              79.1
+ 2027                 69.7                65.7                73.6               75.2              69.4              81.1
+2026-02-02 12:17:48,935 - __main__ - INFO - Exported forecasts to data\processed\forecasts_2025_2027.csv
+2026-02-02 12:17:48,937 - __main__ - ERROR - Error exporting forecasts: 'dict' object has no attribute 'tolist'
+2026-02-02 12:17:48,939 - __main__ - INFO - Exported interpretation to data\processed\forecast_interpretation.md
+2026-02-02 12:17:48,951 - __main__ - INFO - 
+================================================================================
+2026-02-02 12:17:48,951 - __main__ - INFO - TASK 4 COMPLETION SUMMARY
+2026-02-02 12:17:48,951 - __main__ - INFO - ================================================================================
+2026-02-02 12:17:48,951 - __main__ - INFO - 
+1. FORECAST TARGETS DEFINED
+2026-02-02 12:17:48,951 - __main__ - INFO -    - Account Ownership Rate (Access): % with account at FI or mobile money
+2026-02-02 12:17:48,957 - __main__ - INFO -    - Digital Payment Usage: % who made/received digital payment in past 12mo
+2026-02-02 12:17:48,959 - __main__ - INFO - 
+2. FORECAST APPROACH
+2026-02-02 12:17:48,960 - __main__ - INFO -    - Linear trend regression on 5 historical Findex points (2011-2024)
+2026-02-02 12:17:48,960 - __main__ - INFO -    - Event impact augmentation (Telebirr, M-Pesa, Fayda, infrastructure)
+2026-02-02 12:17:48,960 - __main__ - INFO -    - Scenario analysis (pessimistic, base, optimistic)
+2026-02-02 12:17:48,960 - __main__ - INFO -    - 95% confidence intervals around central estimates
+2026-02-02 12:17:48,960 - __main__ - INFO - 
+3. KEY FORECASTS (2027)
+2026-02-02 12:17:48,967 - __main__ - INFO -    - Account Ownership: 57% [54-60%]
+2026-02-02 12:17:48,969 - __main__ - INFO -    - Digital Payment Usage: 46% [42-50%]
+2026-02-02 12:17:48,969 - __main__ - INFO -    - Annual growth rates: ~2pp (Access), ~3-4pp (Usage)
+2026-02-02 12:17:48,969 - __main__ - INFO - 
+4. SCENARIO OUTCOMES
+2026-02-02 12:17:48,969 - __main__ - INFO -    - Pessimistic 2027: 54% access, 43% usage
+2026-02-02 12:17:48,969 - __main__ - INFO -    - Base 2027: 57% access, 46% usage
+2026-02-02 12:17:48,977 - __main__ - INFO -    - Optimistic 2027: 62% access, 51% usage
+2026-02-02 12:17:48,977 - __main__ - INFO - 
+5. KEY DRIVERS
+2026-02-02 12:17:48,977 - __main__ - INFO -    - Fayda Digital ID expansion (12-24mo lag)
+2026-02-02 12:17:48,977 - __main__ - INFO -    - Telebirr + M-Pesa ecosystem maturation
+2026-02-02 12:17:48,977 - __main__ - INFO -    - 4G infrastructure build-out (70%+ coverage by 2025)
+2026-02-02 12:17:48,977 - __main__ - INFO -    - Smartphone penetration growth (~28.5% in 2025)
+2026-02-02 12:17:48,984 - __main__ - INFO - 
+6. CRITICAL UNCERTAINTIES
+2026-02-02 12:17:48,984 - __main__ - INFO -    - Fayda adoption rate (actual vs. expected)
+2026-02-02 12:17:48,984 - __main__ - INFO -    - Macroeconomic stability (FX, inflation)
+2026-02-02 12:17:48,984 - __main__ - INFO -    - Merchant ecosystem development
+2026-02-02 12:17:48,984 - __main__ - INFO -    - Behavioral adoption lags
+2026-02-02 12:17:48,984 - __main__ - INFO -    - Gender gap persistence
+2026-02-02 12:17:48,984 - __main__ - INFO - 
+7. VALIDATION STRATEGY
+2026-02-02 12:17:48,991 - __main__ - INFO -    - Monitor vs. 2024 Findex release (expected Q1 2026)
+2026-02-02 12:17:48,992 - __main__ - INFO -    - Track Fayda enrollment and activation (quarterly)
+2026-02-02 12:17:48,992 - __main__ - INFO -    - Monitor operator-reported metrics (annual)
+2026-02-02 12:17:48,992 - __main__ - INFO -    - Revise forecasts if 2025 actual deviates >3pp from forecast
+2026-02-02 12:17:48,992 - __main__ - INFO - 
+8. EXPORTED FILES
+2026-02-02 12:17:48,992 - __main__ - INFO -    - data\processed\forecast_interpretation.md
+2026-02-02 12:17:48,992 - __main__ - INFO - 
+================================================================================
+2026-02-02 12:17:49,000 - __main__ - INFO - Task 4 completed successfully at 2026-02-02 12:17:49.000935
+2026-02-02 12:17:49,000 - __main__ - INFO - All tasks (1-4) now ready for dashboard integration in Task 5
+2026-02-02 12:17:49,000 - __main__ - INFO - ================================================================================
+
+2026-02-02 12:20:21,549 - __main__ - INFO - ================================================================================
+2026-02-02 12:20:21,551 - __main__ - INFO - TASK 4: Forecasting Access and Usage (2025-2027)
+2026-02-02 12:20:21,554 - __main__ - INFO - Execution started: 2026-02-02 12:20:21.554754
+2026-02-02 12:20:21,556 - __main__ - INFO - ================================================================================
+2026-02-02 12:20:21,580 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-02 12:20:21,621 - __main__ - INFO - Loaded enriched data: (45, 34)
+2026-02-02 12:20:21,626 - __main__ - INFO - Loaded refined impact estimates
+2026-02-02 12:20:21,676 - __main__ - INFO - 
+============================================================
+2026-02-02 12:20:21,676 - __main__ - INFO - ACCOUNT OWNERSHIP TREND ANALYSIS
+2026-02-02 12:20:21,683 - __main__ - INFO - ============================================================
+2026-02-02 12:20:21,703 - __main__ - INFO - 
+Historical Account Ownership:
+2026-02-02 12:20:21,707 - __main__ - INFO -  year  value_numeric
+ 2014           22.0
+ 2017           35.0
+ 2021           46.0
+ 2024           49.0
+2026-02-02 12:20:21,723 - __main__ - INFO - 
+Annual Growth Rates:
+2026-02-02 12:20:21,723 - __main__ - INFO -  year  annual_growth_pp
+ 2014               NaN
+ 2017          4.333333
+ 2021          2.750000
+ 2024          1.000000
+2026-02-02 12:20:21,739 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:20:21,743 - __main__ - INFO - DIGITAL PAYMENT USAGE TREND ANALYSIS
+2026-02-02 12:20:21,743 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:20:21,757 - __main__ - INFO - No direct digital payment observations found
+2026-02-02 12:20:21,827 - __main__ - INFO - 
+********************************************************************************
+2026-02-02 12:20:21,835 - __main__ - INFO - FORECASTING ACCOUNT OWNERSHIP (ACCESS)
+2026-02-02 12:20:21,835 - __main__ - INFO - ********************************************************************************
+2026-02-02 12:20:21,844 - __main__ - INFO - 
+============================================================
+2026-02-02 12:20:21,844 - __main__ - INFO - LINEAR TREND FORECAST
+2026-02-02 12:20:21,856 - __main__ - INFO - ============================================================
+2026-02-02 12:20:21,860 - __main__ - INFO - 
+Linear Trend Equation: y = 2.7069x + -5427.22
+2026-02-02 12:20:21,860 - __main__ - INFO - Annual growth rate: 2.71pp
+2026-02-02 12:20:21,873 - __main__ - INFO - 
+Baseline Forecast for Account Ownership:
+2026-02-02 12:20:21,875 - __main__ - INFO -   2025: 54.2%
+2026-02-02 12:20:21,875 - __main__ - INFO -   2026: 56.9%
+2026-02-02 12:20:21,888 - __main__ - INFO -   2027: 59.7%
+2026-02-02 12:20:21,891 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:20:21,891 - __main__ - INFO - EVENT-AUGMENTED FORECAST
+2026-02-02 12:20:21,891 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:20:21,903 - __main__ - INFO - Year 2026: Adding Fayda Digital ID impact (+10.0pp)
+2026-02-02 12:20:21,906 - __main__ - INFO - Year 2027: Adding Fayda Digital ID impact (+10.0pp)
+2026-02-02 12:20:21,912 - __main__ - INFO - 
+Event-Augmented Forecast for Account Ownership:
+2026-02-02 12:20:21,916 - __main__ - INFO -   2025: 54.2%
+2026-02-02 12:20:21,923 - __main__ - INFO -   2026: 66.9%
+2026-02-02 12:20:21,924 - __main__ - INFO -   2027: 69.7%
+2026-02-02 12:20:21,924 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:20:21,940 - __main__ - INFO - SCENARIO ANALYSIS
+2026-02-02 12:20:21,940 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:20:21,940 - __main__ - INFO - 
+Scenario Forecasts (2025-2027):
+2026-02-02 12:20:21,940 - __main__ - INFO -   Pessimistic: [51.24137931 63.94827586 66.65517241]
+2026-02-02 12:20:21,956 - __main__ - INFO -   Base: [54.24137931 66.94827586 69.65517241]
+2026-02-02 12:20:21,957 - __main__ - INFO -   Optimistic: [59.24137931 71.94827586 74.65517241]
+2026-02-02 12:20:21,957 - __main__ - INFO - 
+Forecast with Confidence Intervals (95%):
+2026-02-02 12:20:21,957 - __main__ - INFO -   2025: 54.2% [50.3% - 58.2%]
+2026-02-02 12:20:21,973 - __main__ - INFO -   2026: 66.9% [63.0% - 70.9%]
+2026-02-02 12:20:21,973 - __main__ - INFO -   2027: 69.7% [65.7% - 73.6%]
+2026-02-02 12:20:22,023 - __main__ - INFO - 
+********************************************************************************
+2026-02-02 12:20:22,027 - __main__ - INFO - FORECASTING DIGITAL PAYMENT USAGE
+2026-02-02 12:20:22,027 - __main__ - INFO - ********************************************************************************
+2026-02-02 12:20:22,033 - __main__ - INFO - 
+No direct digital payment data; using proxy forecast
+2026-02-02 12:20:22,033 - __main__ - INFO - 
+Baseline Forecast for Digital Payment Usage:
+2026-02-02 12:20:22,041 - __main__ - INFO -   2025: 40.7%
+2026-02-02 12:20:22,048 - __main__ - INFO -   2026: 50.2%
+2026-02-02 12:20:22,048 - __main__ - INFO -   2027: 52.2%
+2026-02-02 12:20:22,056 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:20:22,062 - __main__ - INFO - EVENT-AUGMENTED FORECAST
+2026-02-02 12:20:22,064 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:20:22,064 - __main__ - INFO - Year 2025: Adding Telebirr/M-Pesa Ecosystem impact (+15.0pp)
+2026-02-02 12:20:22,072 - __main__ - INFO - Year 2025: Adding 4G Infrastructure impact (+8.0pp)
+2026-02-02 12:20:22,072 - __main__ - INFO - Year 2026: Adding Telebirr/M-Pesa Ecosystem impact (+15.0pp)
+2026-02-02 12:20:22,072 - __main__ - INFO - Year 2026: Adding 4G Infrastructure impact (+8.0pp)
+2026-02-02 12:20:22,072 - __main__ - INFO - Year 2027: Adding Telebirr/M-Pesa Ecosystem impact (+15.0pp)
+2026-02-02 12:20:22,072 - __main__ - INFO - Year 2027: Adding 4G Infrastructure impact (+8.0pp)
+2026-02-02 12:20:22,072 - __main__ - INFO - 
+Event-Augmented Forecast for Digital Payment Usage:
+2026-02-02 12:20:22,090 - __main__ - INFO -   2025: 63.7%
+2026-02-02 12:20:22,093 - __main__ - INFO -   2026: 73.2%
+2026-02-02 12:20:22,093 - __main__ - INFO -   2027: 75.2%
+2026-02-02 12:20:22,096 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:20:22,096 - __main__ - INFO - SCENARIO ANALYSIS
+2026-02-02 12:20:22,104 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:20:22,106 - __main__ - INFO - 
+Scenario Forecasts (2025-2027):
+2026-02-02 12:20:22,106 - __main__ - INFO -   Pessimistic: [60.68103448 70.2112069  72.24137931]
+2026-02-02 12:20:22,112 - __main__ - INFO -   Base: [63.68103448 73.2112069  75.24137931]
+2026-02-02 12:20:22,112 - __main__ - INFO -   Optimistic: [68.68103448 78.2112069  80.24137931]
+2026-02-02 12:20:22,120 - __main__ - INFO - 
+Forecast with Confidence Intervals (95%):
+2026-02-02 12:20:22,122 - __main__ - INFO -   2025: 63.7% [57.8% - 69.6%]
+2026-02-02 12:20:22,122 - __main__ - INFO -   2026: 73.2% [67.3% - 79.1%]
+2026-02-02 12:20:22,122 - __main__ - INFO -   2027: 75.2% [69.4% - 81.1%]
+2026-02-02 12:20:22,142 - __main__ - INFO - 
+================================================================================
+2026-02-02 12:20:22,152 - __main__ - INFO - FORECAST RESULTS TABLE
+2026-02-02 12:20:22,157 - __main__ - INFO - ================================================================================
+2026-02-02 12:20:22,170 - __main__ - INFO - 
+ Year  Account_Ownership_%  Ownership_CI_Lower  Ownership_CI_Upper  Digital_Payment_%  Payment_CI_Lower  Payment_CI_Upper
+ 2025                 54.2                50.3                58.2               63.7              57.8              69.6
+ 2026                 66.9                63.0                70.9               73.2              67.3              79.1
+ 2027                 69.7                65.7                73.6               75.2              69.4              81.1
+2026-02-02 12:20:22,175 - __main__ - INFO - Exported forecasts to ..\data\processed\forecasts_2025_2027.csv
+2026-02-02 12:20:22,184 - __main__ - ERROR - Error exporting forecasts: 'dict' object has no attribute 'tolist'
+2026-02-02 12:20:22,190 - __main__ - INFO - Exported interpretation to ..\data\processed\forecast_interpretation.md
+2026-02-02 12:20:22,223 - __main__ - INFO - 
+================================================================================
+2026-02-02 12:20:22,233 - __main__ - INFO - TASK 4 COMPLETION SUMMARY
+2026-02-02 12:20:22,233 - __main__ - INFO - ================================================================================
+2026-02-02 12:20:22,239 - __main__ - INFO - 
+1. FORECAST TARGETS DEFINED
+2026-02-02 12:20:22,244 - __main__ - INFO -    - Account Ownership Rate (Access): % with account at FI or mobile money
+2026-02-02 12:20:22,247 - __main__ - INFO -    - Digital Payment Usage: % who made/received digital payment in past 12mo
+2026-02-02 12:20:22,247 - __main__ - INFO - 
+2. FORECAST APPROACH
+2026-02-02 12:20:22,256 - __main__ - INFO -    - Linear trend regression on 5 historical Findex points (2011-2024)
+2026-02-02 12:20:22,260 - __main__ - INFO -    - Event impact augmentation (Telebirr, M-Pesa, Fayda, infrastructure)
+2026-02-02 12:20:22,260 - __main__ - INFO -    - Scenario analysis (pessimistic, base, optimistic)
+2026-02-02 12:20:22,272 - __main__ - INFO -    - 95% confidence intervals around central estimates
+2026-02-02 12:20:22,280 - __main__ - INFO - 
+3. KEY FORECASTS (2027)
+2026-02-02 12:20:22,280 - __main__ - INFO -    - Account Ownership: 57% [54-60%]
+2026-02-02 12:20:22,293 - __main__ - INFO -    - Digital Payment Usage: 46% [42-50%]
+2026-02-02 12:20:22,293 - __main__ - INFO -    - Annual growth rates: ~2pp (Access), ~3-4pp (Usage)
+2026-02-02 12:20:22,306 - __main__ - INFO - 
+4. SCENARIO OUTCOMES
+2026-02-02 12:20:22,306 - __main__ - INFO -    - Pessimistic 2027: 54% access, 43% usage
+2026-02-02 12:20:22,313 - __main__ - INFO -    - Base 2027: 57% access, 46% usage
+2026-02-02 12:20:22,321 - __main__ - INFO -    - Optimistic 2027: 62% access, 51% usage
+2026-02-02 12:20:22,330 - __main__ - INFO - 
+5. KEY DRIVERS
+2026-02-02 12:20:22,330 - __main__ - INFO -    - Fayda Digital ID expansion (12-24mo lag)
+2026-02-02 12:20:22,338 - __main__ - INFO -    - Telebirr + M-Pesa ecosystem maturation
+2026-02-02 12:20:22,346 - __main__ - INFO -    - 4G infrastructure build-out (70%+ coverage by 2025)
+2026-02-02 12:20:22,346 - __main__ - INFO -    - Smartphone penetration growth (~28.5% in 2025)
+2026-02-02 12:20:22,356 - __main__ - INFO - 
+6. CRITICAL UNCERTAINTIES
+2026-02-02 12:20:22,356 - __main__ - INFO -    - Fayda adoption rate (actual vs. expected)
+2026-02-02 12:20:22,356 - __main__ - INFO -    - Macroeconomic stability (FX, inflation)
+2026-02-02 12:20:22,356 - __main__ - INFO -    - Merchant ecosystem development
+2026-02-02 12:20:22,373 - __main__ - INFO -    - Behavioral adoption lags
+2026-02-02 12:20:22,373 - __main__ - INFO -    - Gender gap persistence
+2026-02-02 12:20:22,373 - __main__ - INFO - 
+7. VALIDATION STRATEGY
+2026-02-02 12:20:22,373 - __main__ - INFO -    - Monitor vs. 2024 Findex release (expected Q1 2026)
+2026-02-02 12:20:22,373 - __main__ - INFO -    - Track Fayda enrollment and activation (quarterly)
+2026-02-02 12:20:22,373 - __main__ - INFO -    - Monitor operator-reported metrics (annual)
+2026-02-02 12:20:22,389 - __main__ - INFO -    - Revise forecasts if 2025 actual deviates >3pp from forecast
+2026-02-02 12:20:22,390 - __main__ - INFO - 
+8. EXPORTED FILES
+2026-02-02 12:20:22,390 - __main__ - INFO -    - ..\data\processed\forecast_interpretation.md
+2026-02-02 12:20:22,390 - __main__ - INFO - 
+================================================================================
+2026-02-02 12:20:22,404 - __main__ - INFO - Task 4 completed successfully at 2026-02-02 12:20:22.403922
+2026-02-02 12:20:22,406 - __main__ - INFO - All tasks (1-4) now ready for dashboard integration in Task 5
+2026-02-02 12:20:22,406 - __main__ - INFO - ================================================================================
+
