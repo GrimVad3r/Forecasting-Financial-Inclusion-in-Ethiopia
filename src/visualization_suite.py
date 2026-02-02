@@ -123,3 +123,80 @@ class DataVisualizer:
         save_path = self.output_dir / "impact_drivers.png"
         plt.savefig(save_path)
         plt.close()
+
+    def plot_usage_gap_bar(self, df: pd.DataFrame):
+        """1. Usage Gap Bar Chart - Registered vs. Active Digital Users"""
+        plt.figure(figsize=(10, 6))
+        # Logic: Filter for Telebirr users (Registered) vs Active Rate
+        # Based on CSV: USG_TELEBIRR_USERS vs USG_ACTIVE_RATE
+        metrics = df[df['indicator_code'].isin(['USG_TELEBIRR_USERS', 'USG_ACTIVE_RATE'])]
+        
+        plot = sns.barplot(data=metrics, x='indicator', y='value_numeric', palette='flare')
+        plot.set_title("Digital Finance Usage Gap: Registration vs. 90-Day Activity")
+        plot.set_ylabel("Value (Users Count / Percentage)")
+        
+        plt.tight_layout()
+        plt.savefig(self.output_dir / "usage_gap_bar.png")
+        plt.show()
+
+    def plot_gender_ownership_heatmap(self, df: pd.DataFrame):
+        """2. Gender-Disaggregated Ownership Gap Heatmap"""
+        # Pivot the data: Rows=Years, Cols=Gender, Values=Ownership Rate
+        gender_df = df[df['indicator_code'] == 'ACC_OWNERSHIP'].pivot_table(
+            index='fiscal_year', columns='gender', values='value_numeric'
+        )
+        
+        if not gender_df.empty:
+            plt.figure(figsize=(10, 5))
+            # Calculate gap for annotation
+            plot = sns.heatmap(gender_df, annot=True, cmap="YlGnBu", fmt=".1f")
+            plot.set_title("Gender Ownership Gap over Time")
+            
+            plt.tight_layout()
+            plt.savefig(self.output_dir / "gender_ownership_heatmap.png")
+            plt.show()
+
+    def plot_infra_vs_ownership_scatter(self, df: pd.DataFrame):
+        """3. Infrastructure vs. Ownership Correlation Scatter Plot"""
+        # Prepare data: Need rows where we have both infra and ownership for same period
+        pivot_df = df.pivot_table(
+            index=['fiscal_year', 'location'], 
+            columns='indicator_code', 
+            values='value_numeric'
+        ).reset_index()
+
+        # Assuming ACC_MOBILE_PEN (Infra) and ACC_OWNERSHIP (Ownership)
+        if 'ACC_MOBILE_PEN' in pivot_df.columns and 'ACC_OWNERSHIP' in pivot_df.columns:
+            plt.figure(figsize=(10, 6))
+            plot = sns.scatterplot(
+                data=pivot_df, x='ACC_MOBILE_PEN', y='ACC_OWNERSHIP', 
+                hue='fiscal_year', size='ACC_MOBILE_PEN', sizes=(100, 400)
+            )
+            sns.regplot(data=pivot_df, x='ACC_MOBILE_PEN', y='ACC_OWNERSHIP', scatter=False, color='gray')
+            
+            plot.set_title("Correlation: Mobile Penetration vs. Account Ownership")
+            plot.set_xlabel("Mobile Penetration Rate (%)")
+            plot.set_ylabel("Account Ownership (%)")
+            
+            plt.tight_layout()
+            plt.savefig(self.output_dir / "infra_ownership_correlation.png")
+            plt.show()
+
+    def plot_transaction_type_pie(self, df: pd.DataFrame):
+        """4. Transaction Type Distribution Pie Chart"""
+        # Filter for transaction indicators (e.g., P2P, Merchant, Utility)
+        tx_indicators = ['USG_P2P_COUNT', 'USG_MERCHANT_PAY', 'USG_UTILITY_PAY']
+        tx_data = df[df['indicator_code'].isin(tx_indicators)].copy()
+        
+        if not tx_data.empty:
+            plt.figure(figsize=(8, 8))
+            plt.pie(
+                tx_data['value_numeric'], 
+                labels=tx_data['indicator'], 
+                autopct='%1.1f%%', 
+                colors=sns.color_palette('pastel')
+            )
+            plt.title("Volume Distribution by Transaction Type")
+            
+            plt.savefig(self.output_dir / "transaction_distribution_pie.png")
+            plt.show()
