@@ -1,0 +1,239 @@
+2026-02-02 11:59:18,162 - __main__ - INFO - ================================================================================
+2026-02-02 11:59:18,162 - __main__ - INFO - TASK 3: Event Impact Modeling
+2026-02-02 11:59:18,162 - __main__ - INFO - Execution started: 2026-02-02 11:59:18.162990
+2026-02-02 11:59:18,162 - __main__ - INFO - ================================================================================
+2026-02-02 11:59:18,192 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-02 11:59:35,921 - __main__ - INFO - ================================================================================
+2026-02-02 11:59:35,921 - __main__ - INFO - TASK 3: Event Impact Modeling
+2026-02-02 11:59:35,921 - __main__ - INFO - Execution started: 2026-02-02 11:59:35.921568
+2026-02-02 11:59:35,929 - __main__ - INFO - ================================================================================
+2026-02-02 11:59:35,939 - __main__ - INFO - Scripts path already in sys.path or does not exist: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-02 11:59:35,971 - __main__ - INFO - Loaded enriched data: (45, 34)
+2026-02-02 11:59:36,284 - __main__ - INFO - Loaded impact links: (14, 35)
+2026-02-02 11:59:36,313 - __main__ - INFO - 
+Loading and enriching impact data
+2026-02-02 11:59:36,321 - __main__ - INFO - Impact data enriched: 14 records
+2026-02-02 11:59:36,321 - __main__ - INFO - 
+============================================================
+2026-02-02 11:59:36,321 - __main__ - INFO - IMPACT LINK SUMMARY
+2026-02-02 11:59:36,321 - __main__ - INFO - ============================================================
+2026-02-02 11:59:36,340 - __main__ - INFO - 
+Total unique event-indicator relationships: 0
+2026-02-02 11:59:36,340 - __main__ - INFO - 
+Events and their effects:
+2026-02-02 11:59:36,351 - __main__ - INFO - 
+============================================================
+2026-02-02 11:59:36,354 - __main__ - INFO - BUILDING EVENT-INDICATOR ASSOCIATION MATRIX
+2026-02-02 11:59:36,354 - __main__ - INFO - ============================================================
+2026-02-02 11:59:36,399 - __main__ - INFO - 
+Association Matrix (8 events × 5 indicators):
+2026-02-02 11:59:36,406 - __main__ - INFO - 
+         ACC_OWNERSHIP ACC_MM_ACCOUNT ACC_4G_COV USG_DIGITAL_PAYMENT USG_P2P_COUNT
+Event                                                                             
+EVT_0001             -              -          -                   -             -
+EVT_0002             -              -          -                   -             -
+EVT_0003             -              -          -                   -             -
+EVT_0004             -              -          -                   -             -
+EVT_0005             -              -          -                   -             -
+EVT_0007             -              -          -                   -             -
+EVT_0008             -              -          -                   -             -
+EVT_0010             -              -          -                   -             -
+2026-02-02 11:59:36,410 - __main__ - INFO - Exported association matrix to data\processed\event_indicator_association_matrix.csv
+2026-02-02 11:59:36,426 - __main__ - INFO - 
+============================================================
+2026-02-02 11:59:36,426 - __main__ - INFO - COMPARABLE COUNTRY EVIDENCE
+2026-02-02 11:59:36,426 - __main__ - INFO - ============================================================
+2026-02-02 11:59:36,426 - __main__ - INFO - 
+Evidence from comparable countries:
+2026-02-02 11:59:36,451 - __main__ - INFO -   Comparable: Kenya
+2026-02-02 11:59:36,456 - __main__ - INFO -   Basis: literature
+2026-02-02 11:59:36,457 - __main__ - INFO -   Impact: increase by high%
+2026-02-02 11:59:36,457 - __main__ - INFO -   Comparable: Rwanda
+2026-02-02 11:59:36,457 - __main__ - INFO -   Basis: literature
+2026-02-02 11:59:36,457 - __main__ - INFO -   Impact: decrease by medium%
+2026-02-02 11:59:36,467 - __main__ - INFO -   Comparable: India
+2026-02-02 11:59:36,467 - __main__ - INFO -   Basis: literature
+2026-02-02 11:59:36,471 - __main__ - INFO -   Impact: decrease by medium%
+2026-02-02 11:59:36,475 - __main__ - INFO -   Comparable: Tanzania
+2026-02-02 11:59:36,475 - __main__ - INFO -   Basis: literature
+2026-02-02 11:59:36,478 - __main__ - INFO -   Impact: increase by medium%
+2026-02-02 11:59:36,481 - __main__ - INFO -   Comparable: India
+2026-02-02 11:59:36,481 - __main__ - INFO -   Basis: literature
+2026-02-02 11:59:36,481 - __main__ - INFO -   Impact: increase by medium%
+2026-02-02 11:59:36,481 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 11:59:36,481 - __main__ - INFO - KENYA M-PESA IMPACT BENCHMARK
+2026-02-02 11:59:36,487 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 11:59:36,489 - __main__ - INFO - 
+Kenya M-Pesa Impact Estimates (benchmark for Ethiopia):
+2026-02-02 11:59:36,489 - __main__ - INFO -   Account ownership impact: +15pp
+2026-02-02 11:59:36,489 - __main__ - INFO -   Mobile money penetration: 75%
+2026-02-02 11:59:36,489 - __main__ - INFO -   Gender gap reduction: -8pp
+2026-02-02 11:59:36,489 - __main__ - INFO -   Implementation lag: 12 months
+2026-02-02 11:59:36,489 - __main__ - INFO -   Source: Suri & Jack (2016): The Long-Run Poverty and Gender Impacts of Mobile Money
+2026-02-02 11:59:36,504 - __main__ - INFO - 
+============================================================
+2026-02-02 11:59:36,504 - __main__ - INFO - MODEL VALIDATION: TELEBIRR IMPACT
+2026-02-02 11:59:36,507 - __main__ - INFO - ============================================================
+2026-02-02 11:59:36,514 - __main__ - INFO - 
+Telebirr Impact Validation:
+2026-02-02 11:59:36,514 - __main__ - INFO -   Pre-launch MM rate: None%
+2026-02-02 11:59:36,520 - __main__ - INFO -   Post-launch MM rate: 4.7%
+2026-02-02 11:59:36,520 - __main__ - INFO -   Observed growth: Nonepp
+2026-02-02 11:59:36,520 - __main__ - INFO -   Model expected: 15%
+2026-02-02 11:59:36,520 - __main__ - INFO -   Status: TBD
+2026-02-02 11:59:36,525 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 11:59:36,525 - __main__ - INFO - MODEL VALIDATION: M-PESA IMPACT
+2026-02-02 11:59:36,528 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 11:59:36,540 - __main__ - INFO - 
+M-Pesa Impact Validation:
+2026-02-02 11:59:36,542 - __main__ - INFO -   Pre-launch MM rate: 4.7%
+2026-02-02 11:59:36,544 - __main__ - INFO -   Post-launch MM rate (partial): 9.45%
+2026-02-02 11:59:36,546 - __main__ - INFO -   Status: INCOMPLETE (need 12+ months post-launch data)
+2026-02-02 11:59:36,560 - __main__ - INFO - 
+============================================================
+2026-02-02 11:59:36,560 - __main__ - INFO - REFINED IMPACT ESTIMATES
+2026-02-02 11:59:36,560 - __main__ - INFO - ============================================================
+2026-02-02 11:59:36,568 - __main__ - INFO - 
+Refined Estimates Summary:
+2026-02-02 11:59:36,570 - __main__ - INFO - 
+Telebirr Launch (2021):
+2026-02-02 11:59:36,573 - __main__ - INFO -   ACC_OWNERSHIP: +15.0% (confidence: medium, lag: 12mo)
+2026-02-02 11:59:36,575 - __main__ - INFO -   ACC_MM_ACCOUNT: +25.0% (confidence: high, lag: 6mo)
+2026-02-02 11:59:36,577 - __main__ - INFO -   USG_P2P_COUNT: +25.0% (confidence: high, lag: 6mo)
+2026-02-02 11:59:36,579 - __main__ - INFO - 
+Safaricom Entry (2022):
+2026-02-02 11:59:36,581 - __main__ - INFO -   ACC_4G_COV: +15.0% (confidence: medium, lag: 12mo)
+2026-02-02 11:59:36,581 - __main__ - INFO -   AFF_DATA_INCOME: -20.0% (confidence: medium, lag: 12mo)
+2026-02-02 11:59:36,583 - __main__ - INFO - 
+M-Pesa Launch (2023):
+2026-02-02 11:59:36,583 - __main__ - INFO -   ACC_MM_ACCOUNT: +5.0% (confidence: medium, lag: 6mo)
+2026-02-02 11:59:36,583 - __main__ - INFO -   USG_DIGITAL_PAYMENT: +8.0% (confidence: medium, lag: 9mo)
+2026-02-02 11:59:36,583 - __main__ - INFO - 
+Fayda Digital ID (2024):
+2026-02-02 11:59:36,589 - __main__ - INFO -   ACC_OWNERSHIP: +10.0% (confidence: medium, lag: 24mo)
+2026-02-02 11:59:36,589 - __main__ - INFO -   GEN_GAP_ACC: -5.0% (confidence: medium, lag: 24mo)
+2026-02-02 11:59:36,589 - __main__ - INFO - 
+FX Reform (2024):
+2026-02-02 11:59:36,589 - __main__ - INFO -   AFF_DATA_INCOME: +30.0% (confidence: high, lag: 3mo)
+2026-02-02 11:59:36,589 - __main__ - INFO - Exported refined estimates to data\processed\refined_impact_estimates.json
+2026-02-02 11:59:36,605 - __main__ - INFO - 
+Creating methodology documentation
+2026-02-02 12:01:37,953 - __main__ - INFO - ================================================================================
+2026-02-02 12:01:37,955 - __main__ - INFO - TASK 3: Event Impact Modeling
+2026-02-02 12:01:37,955 - __main__ - INFO - Execution started: 2026-02-02 12:01:37.955721
+2026-02-02 12:01:37,957 - __main__ - INFO - ================================================================================
+2026-02-02 12:01:37,988 - __main__ - INFO - Added scripts path to sys.path: c:\GitHub\Forecasting-Financial-Inclusion-in-Ethiopia\src
+2026-02-02 12:01:38,017 - __main__ - INFO - Loaded enriched data: (45, 34)
+2026-02-02 12:01:38,240 - __main__ - INFO - Loaded impact links: (14, 35)
+2026-02-02 12:01:38,263 - __main__ - INFO - 
+Loading and enriching impact data
+2026-02-02 12:01:38,268 - __main__ - INFO - Impact data enriched: 14 records
+2026-02-02 12:01:38,270 - __main__ - INFO - 
+============================================================
+2026-02-02 12:01:38,270 - __main__ - INFO - IMPACT LINK SUMMARY
+2026-02-02 12:01:38,270 - __main__ - INFO - ============================================================
+2026-02-02 12:01:38,270 - __main__ - INFO - 
+Total unique event-indicator relationships: 0
+2026-02-02 12:01:38,270 - __main__ - INFO - 
+Events and their effects:
+2026-02-02 12:01:38,287 - __main__ - INFO - 
+============================================================
+2026-02-02 12:01:38,287 - __main__ - INFO - BUILDING EVENT-INDICATOR ASSOCIATION MATRIX
+2026-02-02 12:01:38,293 - __main__ - INFO - ============================================================
+2026-02-02 12:01:38,321 - __main__ - INFO - 
+Association Matrix (8 events × 5 indicators):
+2026-02-02 12:01:38,328 - __main__ - INFO - 
+         ACC_OWNERSHIP ACC_MM_ACCOUNT ACC_4G_COV USG_DIGITAL_PAYMENT USG_P2P_COUNT
+Event                                                                             
+EVT_0001             -              -          -                   -             -
+EVT_0002             -              -          -                   -             -
+EVT_0003             -              -          -                   -             -
+EVT_0004             -              -          -                   -             -
+EVT_0005             -              -          -                   -             -
+EVT_0007             -              -          -                   -             -
+EVT_0008             -              -          -                   -             -
+EVT_0010             -              -          -                   -             -
+2026-02-02 12:01:38,332 - __main__ - INFO - Exported association matrix to ..\data\processed\event_indicator_association_matrix.csv
+2026-02-02 12:01:38,343 - __main__ - INFO - 
+============================================================
+2026-02-02 12:01:38,343 - __main__ - INFO - COMPARABLE COUNTRY EVIDENCE
+2026-02-02 12:01:38,343 - __main__ - INFO - ============================================================
+2026-02-02 12:01:38,343 - __main__ - INFO - 
+Evidence from comparable countries:
+2026-02-02 12:01:38,359 - __main__ - INFO -   Comparable: Kenya
+2026-02-02 12:01:38,363 - __main__ - INFO -   Basis: literature
+2026-02-02 12:01:38,366 - __main__ - INFO -   Impact: increase by high%
+2026-02-02 12:01:38,370 - __main__ - INFO -   Comparable: Rwanda
+2026-02-02 12:01:38,370 - __main__ - INFO -   Basis: literature
+2026-02-02 12:01:38,372 - __main__ - INFO -   Impact: decrease by medium%
+2026-02-02 12:01:38,377 - __main__ - INFO -   Comparable: India
+2026-02-02 12:01:38,377 - __main__ - INFO -   Basis: literature
+2026-02-02 12:01:38,377 - __main__ - INFO -   Impact: decrease by medium%
+2026-02-02 12:01:38,380 - __main__ - INFO -   Comparable: Tanzania
+2026-02-02 12:01:38,380 - __main__ - INFO -   Basis: literature
+2026-02-02 12:01:38,380 - __main__ - INFO -   Impact: increase by medium%
+2026-02-02 12:01:38,380 - __main__ - INFO -   Comparable: India
+2026-02-02 12:01:38,380 - __main__ - INFO -   Basis: literature
+2026-02-02 12:01:38,380 - __main__ - INFO -   Impact: increase by medium%
+2026-02-02 12:01:38,391 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:01:38,391 - __main__ - INFO - KENYA M-PESA IMPACT BENCHMARK
+2026-02-02 12:01:38,391 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:01:38,393 - __main__ - INFO - 
+Kenya M-Pesa Impact Estimates (benchmark for Ethiopia):
+2026-02-02 12:01:38,393 - __main__ - INFO -   Account ownership impact: +15pp
+2026-02-02 12:01:38,393 - __main__ - INFO -   Mobile money penetration: 75%
+2026-02-02 12:01:38,393 - __main__ - INFO -   Gender gap reduction: -8pp
+2026-02-02 12:01:38,393 - __main__ - INFO -   Implementation lag: 12 months
+2026-02-02 12:01:38,399 - __main__ - INFO -   Source: Suri & Jack (2016): The Long-Run Poverty and Gender Impacts of Mobile Money
+2026-02-02 12:01:38,407 - __main__ - INFO - 
+============================================================
+2026-02-02 12:01:38,411 - __main__ - INFO - MODEL VALIDATION: TELEBIRR IMPACT
+2026-02-02 12:01:38,411 - __main__ - INFO - ============================================================
+2026-02-02 12:01:38,417 - __main__ - INFO - 
+Telebirr Impact Validation:
+2026-02-02 12:01:38,417 - __main__ - INFO -   Pre-launch MM rate: None%
+2026-02-02 12:01:38,417 - __main__ - INFO -   Post-launch MM rate: 4.7%
+2026-02-02 12:01:38,417 - __main__ - INFO -   Observed growth: Nonepp
+2026-02-02 12:01:38,422 - __main__ - INFO -   Model expected: 15%
+2026-02-02 12:01:38,422 - __main__ - INFO -   Status: TBD
+2026-02-02 12:01:38,422 - __main__ - INFO - 
+------------------------------------------------------------
+2026-02-02 12:01:38,422 - __main__ - INFO - MODEL VALIDATION: M-PESA IMPACT
+2026-02-02 12:01:38,422 - __main__ - INFO - ------------------------------------------------------------
+2026-02-02 12:01:38,431 - __main__ - INFO - 
+M-Pesa Impact Validation:
+2026-02-02 12:01:38,431 - __main__ - INFO -   Pre-launch MM rate: 4.7%
+2026-02-02 12:01:38,431 - __main__ - INFO -   Post-launch MM rate (partial): 9.45%
+2026-02-02 12:01:38,431 - __main__ - INFO -   Status: INCOMPLETE (need 12+ months post-launch data)
+2026-02-02 12:01:38,441 - __main__ - INFO - 
+============================================================
+2026-02-02 12:01:38,445 - __main__ - INFO - REFINED IMPACT ESTIMATES
+2026-02-02 12:01:38,445 - __main__ - INFO - ============================================================
+2026-02-02 12:01:38,445 - __main__ - INFO - 
+Refined Estimates Summary:
+2026-02-02 12:01:38,445 - __main__ - INFO - 
+Telebirr Launch (2021):
+2026-02-02 12:01:38,445 - __main__ - INFO -   ACC_OWNERSHIP: +15.0% (confidence: medium, lag: 12mo)
+2026-02-02 12:01:38,454 - __main__ - INFO -   ACC_MM_ACCOUNT: +25.0% (confidence: high, lag: 6mo)
+2026-02-02 12:01:38,454 - __main__ - INFO -   USG_P2P_COUNT: +25.0% (confidence: high, lag: 6mo)
+2026-02-02 12:01:38,454 - __main__ - INFO - 
+Safaricom Entry (2022):
+2026-02-02 12:01:38,454 - __main__ - INFO -   ACC_4G_COV: +15.0% (confidence: medium, lag: 12mo)
+2026-02-02 12:01:38,454 - __main__ - INFO -   AFF_DATA_INCOME: -20.0% (confidence: medium, lag: 12mo)
+2026-02-02 12:01:38,454 - __main__ - INFO - 
+M-Pesa Launch (2023):
+2026-02-02 12:01:38,454 - __main__ - INFO -   ACC_MM_ACCOUNT: +5.0% (confidence: medium, lag: 6mo)
+2026-02-02 12:01:38,454 - __main__ - INFO -   USG_DIGITAL_PAYMENT: +8.0% (confidence: medium, lag: 9mo)
+2026-02-02 12:01:38,464 - __main__ - INFO - 
+Fayda Digital ID (2024):
+2026-02-02 12:01:38,467 - __main__ - INFO -   ACC_OWNERSHIP: +10.0% (confidence: medium, lag: 24mo)
+2026-02-02 12:01:38,467 - __main__ - INFO -   GEN_GAP_ACC: -5.0% (confidence: medium, lag: 24mo)
+2026-02-02 12:01:38,469 - __main__ - INFO - 
+FX Reform (2024):
+2026-02-02 12:01:38,469 - __main__ - INFO -   AFF_DATA_INCOME: +30.0% (confidence: high, lag: 3mo)
+2026-02-02 12:01:38,471 - __main__ - INFO - Exported refined estimates to ..\data\processed\refined_impact_estimates.json
+2026-02-02 12:01:38,483 - __main__ - INFO - 
+Creating methodology documentation
